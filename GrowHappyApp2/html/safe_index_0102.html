@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="../css/safe_index_01.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<script src="../js/safe_index102.js"></script>
+	</head>
+
+	<body>
+		<div class="bk"><img src="../img/index_14.jpg"></div>
+		<div class="bk1">
+			<div class="title">
+				急救常识
+			</div>
+			<div class="content">
+				<div class="roll" id="roll1">
+				</div>
+				<div class="split"></div>
+				<div class="up" onclick="pageUp();">上一页</div>
+				<div class="down" onclick="nextPage();">下一页</div>
+			</div>
+		</div>
+		<div class="footbk">
+			<img src="../img/safe_index_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a onclick="goback();">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+		<script src="../js/mui.min.js"></script>
+	</body>
+<script>
+	function goback(){
+        var wobj = plus.webview.getWebviewById("emergency_treatment");
+        wobj.reload(true);
+		mui.back();
+		
+	}
+	
+</script>
+
+
+</html>

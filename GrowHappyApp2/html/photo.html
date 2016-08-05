@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/photo.css">
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<script src="../js/photo.js"></script>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav headbk">
+			
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title">相册</h1>
+		</header>
+		<div class="menu">
+			<div class="item active" id="menu1" onclick="menu_01();">班级相册</div>
+			<div class="item" id="menu2" onclick="menu_02();">个人相册</div>
+			<div class="item" id="menu3" onclick="menu_03();">荣誉榜</div>
+		</div>
+		<div class="content" id="roll1"> 
+
+		</div>
+		<div class="content2" id="roll2">
+			
+		</div>
+		<div class="content3" id="roll3">
+
+		</div>
+	</body>
+	<script>
+		function goPic(i){
+			//alert(i)
+			//e.detail.gesture.preventDefault(); //修复iOS 8.x平台存在的bug，使用plus.nativeUI.prompt会造成输入法闪一下又没了
+			/*
+				var btnArray = ['取消', '确定'];
+				mui.prompt('请输入相片名称：', '新建相片', '我的相片', btnArray, function(e) {
+					if (e.index == 1) {
+						mui.toast(e.value);
+					} else {
+						mui.toast("您选择了取消") ;
+					}
+				})*/
+		}		
+		
+	
+		
+	
+	</script>
+
+</html>

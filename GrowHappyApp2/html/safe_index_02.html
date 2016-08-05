@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="../css/safe_index_01.css" />
+		<script src="../js/safe_index.js"></script>
+		 <script src= "../js/mui.min.js " ></script>
+          <script src="../js/common/jquery-1.8.0.min.js" ></script>
+          <script src= "../js/common/app.js" ></script>
+         <script src= "../js/common/config.js" ></script>
+		<script type= "text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HR3RRyTsXYdQ3QzzG5yUkg0q" ></script>
+        <script type= "text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js" ></script>
+	</head>
+
+	<body>
+		<!--<div class="bk"><img src="../img/index_14.jpg"></div>-->
+		<!-- 第二张 -->
+		<div class="mui-slider-item">
+			<div class="bk2">
+				<div class="title">
+					出行路径
+				</div>
+				<div class="content">
+					<div class="title">
+						<a href="javascript:getPosBaidu();">
+						<img src="../img/safe_index_03.jpg">实时路径</a>
+					</div>
+					
+						<div id= "container" style="left: 6%;text-align: center;border-radius: 20px;width:280px;height:250px;"> 
+					 </div>
+					<div class="split"></div>
+					<div class="route">
+						<div class="time">
+							<div class="time_item">
+								<div class="clock">12:15</div>
+								<div class="date">2016/2/12</div>
+							</div>
+							<div class="time_item">
+								<div class="clock">10:20</div>
+								<div class="date">2016/2/12</div>
+							</div>
+							<div class="time_item">
+								<div class="clock">09:50</div>
+								<div class="date">2016/2/12</div>
+							</div>
+							<div class="time_item">
+								<div class="clock">08:10</div>
+								<div class="date">2016/2/12</div>
+							</div>
+							<div class="time_item">
+								<div class="clock">07:30</div>
+								<div class="date">2016/2/12</div>
+							</div>
+						</div>
+						<div class="axis">
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+						</div>
+						<div class="address">
+							<div class="address_item">
+								<div class="place">
+									嘉兴南湖国际实验学校
+								</div>
+								<div class="locale">
+									嘉兴市南湖区中港路122号
+								</div>
+							</div>
+							<div class="address_item">
+								<div class="place">
+									嘉兴南湖国际实验学校
+								</div>
+								<div class="locale">
+									嘉兴市南湖区中港路122号
+								</div>
+							</div>
+							<div class="address_item">
+								<div class="place">
+									嘉兴南湖国际实验学校
+								</div>
+								<div class="locale">
+									嘉兴市南湖区中港路122号
+								</div>
+							</div>
+							<div class="address_item">
+								<div class="place">
+									嘉兴南湖国际实验学校
+								</div>
+								<div class="locale">
+									嘉兴市南湖区中港路122号
+								</div>
+							</div>
+							<div class="address_item">
+								<div class="place">
+									嘉兴南湖国际实验学校
+								</div>
+								<div class="locale">
+									嘉兴市南湖区中港路122号
+								</div>
+							</div>
+						</div>
+						<div class="axis">
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+							<div class="axis_item">
+							</div>
+						</div>
+						<div class="state">
+							<div class="state_item">
+								<img src="../img/safe_index_06.jpg">
+								<div class="text">已签到</div>
+							</div>
+							<div class="state_item">
+								<img src="../img/safe_index_06.jpg">
+								<div class="text">已签到</div>
+							</div>
+							<div class="state_item">
+								<img src="../img/safe_index_06.jpg">
+								<div class="text">已签到</div>
+							</div>
+							<div class="state_item">
+								<img src="../img/safe_index_06.jpg">
+								<div class="text">已签到</div>
+							</div>
+							<div class="state_item">
+								<img src="../img/safe_index_05.jpg">
+								<div class="text color">未签到</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footbk">
+			<img src="../img/safe_index_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a href="javascript:" onclick="history.back(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+		<script src="../js/mui.min.js"></script>
+	</body>
+  <script>
+  	 mui.plusReady(function(){
+     getPosBaidu();
+ 
+ });
+ 
+
+
+  	function geoInf( position ) {
+    var currentLon = position.coords.longitude;
+    var currentLat = position.coords.latitude;
+    mui.toast( "精度：" + currentLon+ "纬度:" +currentLat);
+    var gpsPoint = new BMap.Point(currentLon,currentLat);
+    BMap.Convertor.translate(gpsPoint, 2,initMap); //坐标转换
+   
+}
+  	
+// 通过百度定位模块获取位置信息
+function getPosBaidu(){
+     mui.toast( "获取百度定位位置信息:" );
+     plus. geolocation.getCurrentPosition( geoInf, function ( e ) {
+          mui.toast( "获取百度定位位置信息失败：" +e.message);
+     },{provider :'baidu'});
+}
+
+function initMap(point ){
+    map = new BMap.Map( "container" ); //创建地图
+    map.addControl(new BMap.NavigationControl());
+    map.addControl(new BMap.ScaleControl());
+    map.addControl(new BMap.OverviewMapControl());
+    map.centerAndZoom(point,15);
+    map.addOverlay(new BMap.Marker(point));
+    //alert( "22");
+    /*
+    var map = new BMap.Map("container");                    // new Map 
+    var point = new BMap.Point(116.404, 39.915);      // Location, （经度, 纬度） 
+    map.centerAndZoom(point, 10);                           // show Map 
+    // 添加缩放功能 
+    map.enableScrollWheelZoom();
+    map.enableKeyboard(); 
+    */
+ 
+}
+  </script>
+</html>

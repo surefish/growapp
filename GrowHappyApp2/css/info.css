@@ -1,0 +1,50 @@
+.headbk
+{
+	background-color: white;
+}
+.headlink
+{
+	color: #919191;
+}
+.content
+{
+	margin-top: 70px;
+	width: 100%;
+	background-color: white;
+}
+.item
+{
+	clear: both;
+	color: #919191;
+	padding:5px 10px;
+	border-bottom:solid 1px #cccccc;
+}
+.item img
+{
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.red
+{
+	color: #ff1212;
+}
+.right
+{
+	margin-top: 5px;
+	float:right;
+}
+.right1
+{
+	margin-top: 2px;
+	float:right;
+}
+.date
+{
+	margin-top: 5px;
+}
+.blank
+{
+	height: 40px;
+}

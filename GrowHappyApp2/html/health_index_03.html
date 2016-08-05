@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/health_index_01.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/health_index.js"></script>
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+
+	<body>
+		<div class="bk"><img src="../img/index_14.jpg"></div>
+		<div class="bk3">
+			<div class="title"> 
+				心语乐园
+			</div>
+			<div class="content">
+			<div class="msg">
+				<span class="mui-icon mui-icon-info"></span>
+				<span class="info">有一条来自母亲的语音留言。</span>
+				<span>查看</span>
+			</div>
+			<div class="Split"></div>
+			<div class="menu">
+				<div class="item">
+					<div class="img"><img src="../img/health_index_03.jpg" ></div>
+					<div class="text">我的心语墙</div>
+				</div>
+				<div class="split"></div>
+				<div class="item">
+					<div class="img"><img src="../img/health_index_04.jpg" ></div>
+					<div class="text">新建语音留言</div>
+				</div>
+				<div class="split"></div>
+				<div class="item">
+					<div class="img"><img src="../img/health_index_05.jpg" ></div>
+					<div class="text">新建文字留言</div>
+				</div>
+			</div>
+			<div class="questionnaire">
+				<div class="title">
+				<a href="questionnaire_index.html">
+				<div class="left">
+					<img src="../img/health_index_06.jpg">
+						<div class="new">新的</div>
+						<div>问卷</div>
+				</div>
+				</a> 
+				<div class="center">学校问卷</div>
+				<div class="right">社会问卷</div>
+				</div>
+				<div class="text">
+				关于三年级学生运动心里健康的调查问卷
+				</div>
+				<div class="date">
+				有效期：2016/02/02-2016/05/03	
+				</div>
+				<div class="text">
+				关于本校学生放学回家方式的调查问卷
+				</div>
+				<div class="date">
+				有效期：2016/02/02-2016/05/03	
+				</div>
+			</div>
+			<div class="result">
+				<div class="title">
+				<div class="left">
+					<img src="../img/health_index_07.jpg">
+						<div class="new">问卷</div>
+						<div>结论</div>
+				</div>
+				<div class="center">学校问卷</div>
+				<div class="right">社会问卷</div>
+				</div>
+				<div class="text">
+				关于三年级学生运动心里健康的调查问卷
+				</div>
+				<div class="date">
+				问卷结论：结论摘要结论摘要结论摘要	
+				</div>
+				<div class="text">
+				关于本校学生放学回家方式的调查问卷
+				</div>
+				<div class="date">
+				问卷结论：结论摘要结论摘要结论摘要		
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="footbk">
+			<img src="../img/safe_index_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a onclick="goback(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+	</body>
+<script>
+
+mui.plusReady(function() {
+	mui.init();
+	});
+	
+	function goback(){
+	    var id=plus.storage.getItem("myindex");
+	    var wobj = plus.webview.getWebviewById(id.toString());
+        wobj.reload(true);
+		mui.back();
+	}
+
+</script>
+</html>

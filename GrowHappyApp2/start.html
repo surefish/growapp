@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/common/app.js"></script>
+		<script src="js/common/jquery-1.8.0.min.js"></script>
+		<script src="js/common/app.js"></script>
+		<script src="js/common/config.js"></script>
+	</head>
+	<style>
+		.pic
+		{
+			position: absolute;
+			width: 100%;
+			height: 99%;
+			top:0px;
+			left: 0px;
+			z-index: -1;
+		}
+		.pic img
+		{
+			width: 100%;
+			height: 100%;
+		}
+		.text
+		{
+			font-size: 25px;
+			margin-left: 92%;
+			margin-top: 10px;
+			text-align: center;
+			padding-top: 10px;
+			width: 50px;
+			height: 40px;
+			float: right;
+			background-color: #ccc;
+			color: white;
+		}
+	</style>
+	<body>
+		<div class="text" id="text">
+			3
+		</div>
+	<div class="pic">
+		<img id="im2" src=""> 
+	</div>
+	</body>
+	<script>
+	mui.plusReady(function() {
+	mui.init();
+	var nowdata=getNowFormatDate();
+	
+	
+	//var arr=['2016-05-01','2016-05-03','2016-05-04','2016-05-05','2016-05-08','2016-05-12','2016-05-15','2016-05-17','2016-05-18','2016-05-20','2016-05-22','2016-05-25','2016-05-26','2016-05-30','2016-05-31','2016-06-01','2016-06-02','2016-06-03','2016-06-04','2016-06-05','2016-06-06','2016-06-07','2016-06-08','2016-06-09','2016-06-10','2016-06-11','2016-06-12','2016-06-13','2016-06-14','2016-06-15','2016-06-16','2016-06-17','2016-06-18','2016-06-19','2016-06-20','2016-06-21','2016-06-22','2016-06-23','2016-06-24','2016-06-25','2016-06-26','2016-06-27','2016-06-28','2016-06-29','2016-06-30'];
+	//var arr=['2016-06-24','2016-06-25','2016-06-26','2016-06-27','2016-06-28','2016-06-29','2016-06-30','2016-07-01','2016-07-02','2016-07-03','2016-07-04','2016-07-05','2016-07-06','2016-07-07','2016-07-08','2016-07-09','2016-07-10','2016-07-11','2016-07-12','2016-07-13','2016-07-14','2016-07-15','2016-07-16','2016-07-17','2016-07-18','2016-07-19','2016-07-20','2016-07-21','2016-07-22','2016-07-23','2016-07-24','2016-07-25','2016-07-26','2016-07-27','2016-07-28','2016-07-29','2016-07-30','2016-07-31'];
+	
+	
+	var sc=ip + "newbegin/jr/"+nowdata+".jpg";
+	
+	$("#im2").attr("src", sc); 
+	
+   // var srcjpg1="img/jr/"+"2016-07-31.jpg";
+    //$("#im2").attr("src", srcjpg1); 
+	});
+	
+	function getNowFormatDate() {
+    var date = new Date();
+    var seperator1 = "-";
+    var seperator2 = ":";
+    var month = date.getMonth() + 1;
+    var strDate = date.getDate();
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (strDate >= 0 && strDate <= 9) {
+        strDate = "0" + strDate;
+    }
+    var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+           
+    return currentdate;
+}
+	
+	
+	var num=3;
+	var text=document.getElementById("text");  
+		function test() {
+         text.innerHTML=num;
+         num--;
+         if(num==0)
+         showFact('login.html', '登录页', '', 'login');
+           }
+ 	 setInterval(test, 1000);
+	</script>
+</html>

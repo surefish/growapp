@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/myinfomation.css">
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<script src="../js/myinformationJS.js"></script>
+		
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title headlink">我的信息</h1>
+		</header>
+		<div class="content">
+		<div class="card">
+			<div class="head">基本信息</div>
+			<div class="info">
+				<div class="item">
+					<span class="item_left">姓名：
+						<span id="fname"></span>
+					</span>					
+					<span class="item_left">性别：
+					<span id="sex"></span>
+					</span>					
+				</div>
+				<div class="item">
+					<span class="item_left">年龄：
+					<span id="age">
+					</span>
+					</span>								
+					<span class="item_left">学校：
+						<span class="green"><span id="myclass"></span></span>
+					</span>									
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="head headleft">成长数据*</div>
+			
+			<div class="headright">
+				<!--<a href="historical_data.html"> 
+                	<img src="../img/myinformation_01.jpg">
+					历史数据</a>
+                -->
+			</div>
+			
+			<div class="growinfo">
+				<div class="item">视力：矫正前：左： <a id="fleftv"></a> 右：<a id="frightv">1</a></div>
+				<div class="item">矫正后：左：<a id="fleftv1">1</a>右：<a id="frightv1">1</a>
+				<span><a id="fresult"> </a>
+				
+				</div>
+				<div class="item">
+					身高：
+				<a href="opinion_02.html"> <span class="ckyj">参考意见</span></a>
+				<span  onclick="javascript:addHeight();" id="sgll" ><a>录入</a></span>	
+				<a id="fheight"></a>CM
+				</div>
+				<div class="item">
+					体重：<a id="fweight"></a>kg
+				<a href="opinion_03.html"> <span class="ckyj">参考意见</span></a>
+				<span onclick="javascript:addWeight();" id="tzll"><a>录入</a></span>
+				</div>
+				<div class="item">
+					牙齿：<a id="ftooth"></a>
+					<span>继续保持</span>
+				</div>
+				<div class="item">数据来源：中小学生统一录入数据</div>
+			</div>
+		</div>
+		
+		<div id="light" class="white_content">
+			<a href="#" onClick="closeWindow()">
+				<span class="mui-icon mui-icon-closeempty right"></span>
+			</a>
+			<div class="title" id="xmName">
+				
+			</div>
+			<div class="input" id="xmsru">
+
+			</div>
+			<button onclick="goinsert();">提交</button>
+		</div>
+		<div id="fade" class="black_overlay"></div>
+		<!--
+        	作者：419179186@qq.com
+        	时间：2016-04-21
+        	描述：
+       
+		<div class="card">
+			<div class="head">我的学校</div>
+			<a href="school_style.html"> 
+			<div class="img">
+				<div id="cd_my" class="school"></div>
+				<img id="im2" src="">
+					
+				<div class="imgright">
+					<img src="../img/myinformation_03.png"> 
+				</div>
+			</div>
+			</a>
+			 -->
+			<!--
+            	作者：419179186@qq.com
+            	时间：2016-03-18
+            	描述：-
+            	<div class="img">
+				<div  class="school">幼儿园：嘉兴市南湖幼儿园</div>
+				<img src="../img/myinformation_04.jpg"> 
+				<div class="imgright">
+					<img src="../img/myinformation_03.png"> 
+				</div>
+			</div>
+            -->
+			
+		</div>
+		</div>
+	</body>
+	
+    <script type="text/javascript">
+    </script>   
+
+
+
+
+        
+        
+        
+  
+    
+</html>

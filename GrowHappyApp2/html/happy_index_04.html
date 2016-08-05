@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/happy_index_04.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<script src="../js/happy_index_04.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="bk"><img src="../img/index_14.jpg"></div>
+		<div class="bk1">
+			<div class="title">
+				快乐学习
+			</div>
+			<div class="content">
+				<div class="menu">
+					<div class="menu_01" id="menu1" onclick="menu_01()">名师讲学</div>
+					<div class="menu_02" id="menu2" onclick="menu_02()">学习分享</div>
+					<div class="menu_03" id="menu3" onclick="menu_03()">微课堂</div>
+				</div>
+				<div class="roll" id="roll1">
+			
+				</div>
+				<div class="roll" id="roll2">
+				
+				</div>
+				<div class="roll" id="roll3">
+				
+				</div>
+				<div class="split"></div>
+				<div class="up" onclick="pageUp();">上一页</div>
+				<div class="down" onclick="nextPage();">下一页</div>
+			</div>
+		</div>
+		<div class="footbk">
+			<img src="../img/safe_index_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a onclick="goback(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+	</body>
+<script>
+	function goback(){
+	    var id=plus.storage.getItem("myindex");
+	    var wobj = plus.webview.getWebviewById(id.toString());
+        wobj.reload(true);
+		mui.back();
+	}
+	
+</script>
+</html>

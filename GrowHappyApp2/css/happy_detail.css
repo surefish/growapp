@@ -1,0 +1,148 @@
+.foot {
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+}
+
+.footbk {
+	position: fixed;
+	bottom: -10px;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.footbk img {
+	width: 100%;
+}
+img
+{
+	width: 100%;
+}
+.iconbk {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #ff8a01;
+	border-radius: 50%;
+	border:solid 1px #e37b01;
+}
+
+.icon {
+	color: white;
+	font-size: 40px;
+	margin-top: 5px;
+}
+
+.bk {
+	position: fixed;
+	top:48%;
+	left: 0px;
+	height: 47%;
+	width: 100%;
+	background-color: #ff8a01;
+	z-index: -1;
+}
+body
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0px;
+	left: 0px;
+}
+.content
+{
+	background-color: #ff8a01;
+	margin-top: 13%;
+	height:90%;
+	width: 100%;
+	color: white;
+}
+.title
+{
+	text-align: center;
+	color: #919191;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	padding-top: 10px;
+	width: 100%;
+}
+.titleright
+{	
+	position: fixed;
+	float: right;
+	font-size: 14px;
+	top:0px;
+	right: 5%;
+	padding-top: 10px;
+}
+.text
+{
+	text-align: center;
+	font-size: 18px;
+	padding-top: 10px;
+	margin-bottom: 2%;
+}
+.tip
+{
+	margin-bottom: 2%;
+}
+.date
+{
+	display: inline-block;
+	font-size: 14px;
+	padding-left: 5%;
+}
+.lib
+{
+	display: inline-block;
+	font-size: 12px;
+	padding:0px 5px;
+	border:solid 1px white;
+	border-radius: 20px;
+}
+.img
+{
+	width: 80%;
+	margin-left: 10%;
+	border-radius:10px;
+	margin-bottom: 2%;
+}
+.img img
+{
+	border-radius:10px;
+}
+.message
+{	
+	text-indent: 2em;
+	padding:0 5%;
+	font-size: 12px;
+}
+.message p
+{
+	color: white;
+	text-indent: 2em;
+}
+.message img
+{
+	width: 80%;
+}
+.roll
+{
+	display: block;
+	height: 73%;
+	overflow: auto;
+}
+.share
+{
+	padding:10px;
+}
+.share img
+{
+	vertical-align: middle;
+	width:40px;	
+}

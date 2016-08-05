@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<style>
+		.content {
+			padding: 10px;
+			color: #919191;
+			font-size: 18px;
+			margin-top: 15%;
+			height: 90%;
+			width: 100%;
+			color: #919191;
+		}
+		
+		.card {
+			height: auto;
+			width: 100%;
+			background-color: white;
+			margin-bottom: 20px;
+		}
+		.right
+		{
+			float: right;
+		}
+		img {
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+		}
+		
+		li {
+			list-style-type: none
+		}
+		.exit
+		{
+			text-align: center;
+			color: red;
+		}
+		.headlink
+		{
+			color:#919191;
+		}
+		a
+		{
+			color: #919191;
+		}
+	</style>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title headlink">设置</h1>
+		</header>
+		<div class="content">
+			<div class="card">
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_01.jpg">
+					<span>消息接收</span>
+					<input type="hidden" id="subMessage" value="true"></input>
+					<div class="mui-switch mui-switch-mini mui-active ">
+					<div onclick="goMessage();" class="mui-switch-handle"></div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_02.jpg">
+					<span>新消息提醒</span>
+					<div class="mui-switch mui-switch-mini">
+						<div onclick="goMessage1();" class="mui-switch-handle"></div>
+						<input type="hidden" id="subMessage1" value="true"></input>
+					</div>
+				</li>
+			</div>
+			<div class="card">
+				<a href="chang_password_student.html">
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_03.jpg">
+					<span>修改密码</span>
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li>
+				</a> 
+				<a href="mailbox_01.html">
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_04.jpg">
+					<span>绑定邮箱</span>
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li>
+				</a> 
+				<a href="Remote_login.html">
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_05.jpg">
+					<span>异地登录提醒</span>
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li>
+				</a> 
+			</div>
+			<!--
+            	作者：419179186@qq.com
+            	时间：2016-04-05
+            	描述：
+            
+			<div class="card">
+				<a href="Font_size.html">
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_06.jpg">
+					<span>字号设置</span>
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li>
+				</a> 
+				<a href="Picture_quality.html">
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_07.jpg">
+					<span>图片质量设置</span> 
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li>
+				</a> 
+				<a href="language.html">
+				<li class="mui-table-view-cell">
+					<img src="../img/setting_08.jpg">
+					<span>语言选择</span>
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li>
+				</a> 
+			</div>
+			-->
+			<div class="card">
+				<a href="opinion.html">
+				<li class="mui-table-view-cell">
+					<span>意见反馈</span>
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li>
+				</a> 
+				<a href="about.html">
+				<li class="mui-table-view-cell">
+					<span>关于我们</span> 
+					<span class="mui-icon mui-icon-forward right"></span>
+				</li></a>
+			</div>
+			<div class="card">
+				<li class="mui-table-view-cell">
+					<div class="exit" onclick="go();">退出账号</div>
+				</li>
+			</div>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+   <script>
+	mui.plusReady(function() {
+		mui.init();
+	});
+
+	function go() {
+		var btn = ["确定", "取消"];
+		mui.confirm('确认退出？', '退出系统', btn, function(e) {
+			if (e.index == 0) {
+				mui.currentWebview.close();
+			}
+		}); //showFact('../login.html', '首页', '', 'index3',''); 
+	}
+	var isms='';
+	var isms1='';
+	function goMessage(){//新消息接收
+		if(document.getElementById("subMessage").value=="true")
+        {
+            document.getElementById("subMessage").value="false";
+          
+        }   
+        else
+        {
+            document.getElementById("subMessage").value="true";
+        }
+         isms=document.getElementById("subMessage").value;
+		mui.ajax(ip + "newbegin/phone/getMsByStud", {
+			data: {
+				isms:isms
+			},
+			dataType: 'text', //服务器返回json格式数据
+			type: 'get', //HTTP请求类型
+			success: function(json) {
+				//获得服务器响应
+				//alert(json);
+			}
+		});
+		
+	}
+	function goMessage1(){//新消息提醒
+		if(document.getElementById("subMessage1").value=="true")
+        {
+            document.getElementById("subMessage1").value="false";
+          
+        }   
+        else
+        {
+            document.getElementById("subMessage1").value="true";
+        }
+         isms1=document.getElementById("subMessage1").value;
+		 mui.ajax(ip + "newbegin/phone/getMsNewByStud", {
+			data: {
+				isms1:isms1
+			},
+			dataType: 'text', //服务器返回json格式数据
+			type: 'get', //HTTP请求类型
+			success: function(json) {
+				//获得服务器响应
+					//alert(json);
+			}
+		});
+		
+	}
+	
+</script>
+</html>

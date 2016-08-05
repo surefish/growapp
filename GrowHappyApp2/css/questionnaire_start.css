@@ -1,0 +1,118 @@
+.foot {
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+}
+
+.footbk {
+	position: fixed;
+	bottom: -10px;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.footbk img {
+	width: 100%;
+}
+img
+{
+	width: 100%;
+}
+.iconbk {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #86d949;
+	border-radius: 50%;
+	border:solid 1px #78c241;
+}
+
+.icon {
+	color: white;
+	font-size: 40px;
+	margin-top: 5px;
+}
+
+.bk {
+	position: fixed;
+	top:48%;
+	left: 0px;
+	height: 47%;
+	width: 100%;
+	background-color: #86d949;
+	z-index: -1;
+}
+body
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0px;
+	left: 0px;
+}
+.title
+{
+	text-align: center;
+	color: #919191;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	padding-top: 10px;
+	width: 100%;
+}
+.content
+{
+	background-color: #86d949;
+	margin-top:13%;
+	height:90%;
+	width: 100%;
+	color: white;
+	overflow: auto;
+}
+.caption
+{
+	font-size: 20px;
+	height: 45px;
+	text-align: center;
+	padding:5px 5%;
+}
+.date
+{
+	text-align: center;
+	color:rgba(255,255,255,0.9);
+	font-size: 15px;
+	margin:2% 0px;
+}
+.split
+{
+	margin-top: 2%;
+	height: 1px;
+	width:90%;
+	margin-left:5%;
+	background:rgba(255,255,255,0.7);
+}
+.text,.unit,.basic
+{
+	font-size: 15px;
+	padding:5%;
+}
+.text span,.unit span,.basic span
+{
+	color:rgba(255,255,255,0.8);
+}
+button
+{
+	margin-top: 5%;
+	width:90%;
+	margin-left:5%;
+	border:solid 1px white;
+	color: white;
+	background-color:#86D949;
+}
+.blank
+{
+	height: 15%;
+}

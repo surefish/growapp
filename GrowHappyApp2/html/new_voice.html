@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/new_voice.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/new_voice.js"></script>
+	</head>
+
+	<body>
+		<div class="title">新建语音</div>
+		<div class="content">
+			<div class="head">
+				<input type="text" placeholder="输入标题">
+			</div>
+			<div class="split"></div>
+			<div class="play">
+				<div class="left" onclick="playchange()">
+					<img src="../img/new_voice_02.jpg" id="play">
+					<div class="text" id="playtext">播放</div>
+				</div>
+				<div class="center">
+					<img src="../img/new_voice_04.jpg">
+				</div>
+				<div class="right">
+					<img src="../img/new_voice_01.jpg">
+					<div class="text">放弃</div>
+				</div>
+			</div>
+			<div class="split"></div>
+			<div class="record" onclick="record()">
+				<span class="mui-icon mui-icon-mic pic"></span>
+			</div>
+			<div class="tip">
+				按住录制按钮开始录制；每段语音信息限时180秒。
+			</div>
+			<div class="power">
+				阅读权限
+				<span class="role active">
+				自己
+				<span class="mui-icon mui-icon-closeempty">
+				</span>
+				</span>
+				<span class="role">母亲</span>
+				<span class="role active">父亲
+				<span class="mui-icon mui-icon-closeempty">
+				</span>
+				</span>
+				<span class="role">爷爷</span>
+				<span class="role">奶奶</span>
+			</div>
+			<div class="btn">
+				<button>发送</button>
+			</div>
+		</div>
+		<div class="bk">
+		</div>
+		<div class="footbk">
+			<img src="../img/sport_detail_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a href="javascript:" onclick="history.back(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+	</body>
+
+</html>

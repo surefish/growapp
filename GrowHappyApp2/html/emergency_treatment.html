@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+	</head>
+	<style> 
+		body {
+			background-color: white;
+		}
+		
+		.content {
+			color: #919191;
+			font-size: 18px;
+			margin-top: 17%;
+			height: 90%;
+			width: 100%;
+			color: #919191;
+		}
+		
+		.headlink {
+			color: #919191;
+		}
+		
+		.pic {
+			text-align: center;
+		}
+		
+		.pic img {
+			width: 90px;
+		}
+		
+		.bg {
+			text-align: center;
+			background-color: #999;
+			margin: 0px 10px;
+			padding: 5px 0px;
+		}
+		
+		.bgcenter {
+			background-color: white;
+			width: 40%;
+			margin-left: 30%;
+			color: #7d1d51;
+		}
+		table
+		{
+		 border:solid #999;
+		 border-width:1px 0px 0px 1px;
+		 margin:0px 10px;
+		 font-size: 15px;
+		}
+		td
+		{
+			width: 25%;
+			padding: 5px 10px;
+		}
+		td img
+		{
+			width: 100%;
+		}
+	</style>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title headlink">急救常识</h1>
+		</header>
+		<div class="content">
+			<div class="pic">
+				<img src="../img/emergency_treatment_01.jpg">
+			</div>
+			<div class="bg">
+				<div class="bgcenter">点击图标查看</div>  
+			</div>
+			<table border="1">
+				<tr>
+					<td><a href="javascript:goNextajjcs();">
+						<img src="../img/emergency_treatment_28.jpg"></a> </td>
+					                    	
+                    
+					<td>
+						<img src="../img/emergency_treatment_02.jpg"></td>
+						
+					<td>
+						<img src="../img/emergency_treatment_07.jpg"></td>
+							
+						
+					<td><img src="../img/emergency_treatment_04.jpg"> </td>
+				</tr>
+				<tr>
+					<td><img src="../img/emergency_treatment_05.jpg"> </td>
+					<td><img src="../img/emergency_treatment_06.jpg"> </td>
+					<td><a href="emergency_treatment_detail.html"><img src="../img/emergency_treatment_03.jpg"></a> </td>
+					<td><img src="../img/emergency_treatment_08.jpg"> </td>
+				</tr>
+				<tr>
+					<td><img src="../img/emergency_treatment_09.jpg"> </td>
+					<td><img src="../img/emergency_treatment_10.jpg"> </td>
+					<td><img src="../img/emergency_treatment_11.jpg"> </td>
+					<td><img src="../img/emergency_treatment_12.jpg"> </td>
+				</tr>
+				<tr>
+					<td><img src="../img/emergency_treatment_13.jpg"> </td>
+					<td><img src="../img/emergency_treatment_14.jpg"> </td>
+					<td><img src="../img/emergency_treatment_15.jpg"> </td>
+					<td><img src="../img/emergency_treatment_16.jpg"> </td>
+				</tr>
+				<tr>
+					<td><img src="../img/emergency_treatment_17.jpg"> </td>
+					<td><img src="../img/emergency_treatment_18.jpg"> </td>
+					<td><img src="../img/emergency_treatment_19.jpg"> </td>
+					<td><img src="../img/emergency_treatment_20.jpg"> </td>
+				</tr>
+				<tr>
+					<td><img src="../img/emergency_treatment_21.jpg"> </td>
+					<td><img src="../img/emergency_treatment_22.jpg"> </td>
+					<td><img src="../img/emergency_treatment_23.jpg"> </td>
+					<td><img src="../img/emergency_treatment_24.jpg"> </td>
+				</tr>
+			</table>
+		</div>
+
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/common/jquery-1.8.0.min.js"></script>
+	<script src="../js/common/app.js"></script>
+	<script src="../js/common/config.js"></script>
+    <script>
+     
+     //去急救常识
+	function goNextajjcs(){
+		    //安全气象3，安全讲堂2，急救常识1
+		    plus.storage.setItem("meuntype", "1");//安全
+			plus.storage.setItem("mytype","1");//选中哪块
+            showFact('safe_index_0102.html', '首页', '',"goMyajjcs",'');
+           
+            
+		}
+   
+    //去安全讲堂
+	function goNextaqjt(){
+		    //安全气象3，安全讲堂2，急救常识1
+		    plus.storage.setItem("meuntype", "1");//安全
+			plus.storage.setItem("mytype","2");//选中哪块
+            showFact('safe_index_01.html', '首页', '',"goMyaqjt",'');
+           
+            
+		}
+     //去安全气象
+	function goNextaqqx(){
+		    //安全气象3，安全讲堂2，急救常识1
+		    plus.storage.setItem("meuntype", "1");//安全
+			plus.storage.setItem("mytype","3");//选中哪块
+            showFact('safe_index_0101.html', '首页', '',"goMyaqqx",'');
+           
+            
+		}
+	 
+     </script>
+
+
+</html>

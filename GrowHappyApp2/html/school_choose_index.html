@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/school_choose_index.css">
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title headlink">选课</h1>
+		</header>
+		<div class="content" id="roll1">
+			<!--
+            	作者：419179186@qq.com
+            	时间：2016-04-06
+            	描述：
+           
+			<div class="item">
+				<div class="photo">
+					<img src="../img/photo_02.jpg"> 
+				</div>
+				<div class="name">电影里的语文</div>
+				<div class="teacher">授课教师：陈晓红</div>
+				<div class="type">课程类别：语言沟通</div>
+				<button><a href="school_choose_content.html">详情</a></button>
+			</div>
+				<div class="item">
+				<div class="photo">
+					<img src="../img/photo_02.jpg"> 
+				</div>
+				<div class="name">电影里的语文</div>
+				<div class="teacher">授课教师：陈晓红</div>
+				<div class="type">课程类别：语言沟通</div>
+				<button>详情</button>
+			</div>
+				<div class="item">
+				<div class="photo">
+					<img src="../img/photo_02.jpg"> 
+				</div>
+				<div class="name">电影里的语文</div>
+				<div class="teacher">授课教师：陈晓红</div>
+				<div class="type">课程类别：语言沟通</div>
+				<button>详情</button>
+			</div>
+				<div class="item">
+				<div class="photo">
+					<img src="../img/photo_02.jpg"> 
+				</div>
+				<div class="name">电影里的语文</div>
+				<div class="teacher">授课教师：陈晓红</div>
+				<div class="type">课程类别：语言沟通</div>
+				<button>详情</button>
+			</div>
+				<div class="item">
+				<div class="photo">
+					<img src="../img/photo_02.jpg"> 
+				</div>
+				<div class="name">电影里的语文</div>
+				<div class="teacher">授课教师：陈晓红</div>
+				<div class="type">课程类别：语言沟通</div>
+				<button>详情</button>
+			</div>
+			 -->
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+    <script>
+    	mui.plusReady(function() {
+    		
+	     mui.init();
+	     w = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+	      mui.ajax(ip + "newbegin/index/showCourse", {
+			data: {
+				
+			},
+			dataType: 'json', //服务器返回json格式数据
+			type: 'get', //HTTP请求类型
+			success: function(json) {
+				//alert(json)
+				w.close();
+				$("#roll1").empty();
+				var stList = json['student'];
+				var ht = '';
+					for (var a = 0; a < stList.length; a++) {
+						var fuid1="'"+stList[a].fuID+"'";
+						var ip1=stList[a].fimage;
+						ht+='<div class="item"><div class="photo">'
+				        ht+='<img src="'+ip1+'"></div>';
+				        ht+='<div class="name">'+stList[a].fname+'</div>'
+				        ht+='<div class="teacher">授课教师:'+stList[a].fteacher+'</div>'
+				        ht+='<div class="type">课程类别:'+stList[a].ftype+'</div>'
+				        ht+='<a href="javascript:goNextPage('+fuid1+');"><button>详情</button></a></div>';
+				        
+					}
+				    $("#roll1").append(ht);
+			},
+					error: function(xhr, type, errorThrown) {
+						//异常处理； 
+						w.close();
+						if (type == 'timeout') {
+							plus.nativeUI.toast("无法连接服务器，请检查网络！", {
+								duration: "long"
+							});
+						} else {
+							plus.nativeUI.toast("异常错误，请联系管理员！", {
+								duration: "long"
+							});
+						}
+					}
+		});	
+    	
+	});
+	function goNextPage(i){
+     //alert(i)
+	plus.storage.setItem("choosfuid", i.toString());
+	showFact('school_choose_content.html', '首页', '', 'choose_content','');
+}
+   
+    	
+    </script>
+	
+</html>

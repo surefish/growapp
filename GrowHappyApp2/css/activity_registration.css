@@ -1,0 +1,105 @@
+.foot {
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+}
+
+.footbk {
+	position: fixed;
+	bottom: -10px;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.footbk img {
+	width: 100%;
+}
+img
+{
+	width: 100%;
+}
+.iconbk {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #ff8a01;
+	border-radius: 50%;
+	border:solid 1px #e37b01;
+}
+
+.icon {
+	color: white;
+	font-size: 40px;
+	margin-top: 5px;
+}
+
+.bk {
+	position: fixed;
+	top:48%;
+	left: 0px;
+	height: 47%;
+	width: 100%;
+	background-color: #ff8a01;
+	z-index: -1;
+}
+body
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0px;
+	left: 0px;
+}
+.content
+{
+	background-color: #ff8a01;
+	margin-top: 13%;
+	height:90%;
+	width: 100%;
+	color: white;
+}
+.title
+{
+	text-align: center;
+	color: #919191;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	padding-top: 10px;
+	width: 100%;
+}
+.myinput
+{
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 10px;
+}
+.myinput input[type=text]
+{
+	border-radius: 10px;
+	border:solid 1px #ff8a01;
+}
+.btn
+{
+	width: 90%;
+	margin-left: 5%;
+}
+.btn button
+{
+	width: 100%;
+	border:solid 1px white;
+	background-color:#FF8A01;
+	color: white;
+	border-radius: 10px;
+}
+.mytext
+{
+	font-size: 14px;
+}
+.mytext a
+{
+	color: blue;
+}

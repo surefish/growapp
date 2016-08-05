@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/picture_list.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/picture_list_gr.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+
+	<body>
+		<div class="title">照片列表
+			<span class="titleright" onclick="openWindow()">新建照片</span>
+		</div>
+		<div class="content">
+			<div class="roll" id="roll">
+				<!--<div class="item">
+					<div class="photo">
+						<img src="../img/photo_02.jpg">
+						<div class="name">照片名称1</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>				
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_02.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">照片名称</div>
+						<div class="ck">
+							<input type="checkbox">
+						</div>
+					</div>
+				</div>-->
+			</div>
+			<div class="page" id="mypage">
+				
+			</div>
+		</div>
+		<div class="bk">
+		</div>
+		<div class="footbk">
+			<img src="../img/happy_index_10.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a href="javascript:goback();">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+		<!--新建相册开始 -->
+		<div id="light" class="white_content">
+			<a href="#" onClick="closeWindow()">
+				<span class="mui-icon mui-icon-closeempty right"></span>
+			</a>
+			<a style="color:#FFFFFF" href="javascript:galleryImg();"> 
+			<div class="photo_icon">
+				<img src="../img/picture_list_01.jpg"> 
+			</div>
+			<div class="photo_title">
+				从相册选择图片
+			</div></a>
+			<a style="color:#FFFFFF" href="javascript:getImage();"> 
+			<div class="photo_icon">
+				<img src="../img/picture_list_02.jpg"> 
+			</div>
+			<div class="photo_title">
+				用相机拍摄
+			</div></a>
+		</div>
+		<!--新建相册结束 -->
+		
+		
+		<div id="fade" class="black_overlay"></div>
+		
+		<!--删除相册开始 -->
+		<div id="light2" class="white_content2">
+			<a href="#" onClick="closeWindow2()">
+				<span class="mui-icon mui-icon-closeempty right"></span>
+			</a>			
+				<img src="../img/register_01.jpg"> 		
+			<div class="photo_btn">
+				<button>确认</button>
+				<button class="right">取消</button>
+			</div>
+		</div>
+		<!--删除相册结束 -->
+		<div id="fade2" class="black_overlay"></div>
+	</body>
+<script>
+
+    //相册返回
+	function goback(){
+	    var wobj = plus.webview.getWebviewById("photo_xclb");
+        wobj.reload(true);
+		mui.back();
+	}
+	
+</script>
+</html>

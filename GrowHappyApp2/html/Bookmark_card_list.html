@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/Bookmark_card_list.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+
+	<body>
+		<div class="bk"><img src="../img/index_14.jpg"></div>
+		<div class="bk1">
+			<div class="title">
+				优惠卡
+			</div>
+			<div class="content">
+				<div class="roll" id="roll1">
+				<!--
+                	作者：419179186@qq.com
+                	时间：2016-03-30
+                	描述：
+                
+					<div class="item1">
+						<div class="photo">
+							<img src="../img/bookmark_card_list_01.jpg"> 
+						</div>
+						<div class="right">
+						<div class="name">
+							查看优惠券
+						</div>
+						<div class="tip">
+							优惠详情与使用条款
+						</div>
+						</div>
+					</div>
+					<div class="item1">
+						<div class="photo">
+							<img src="../img/bookmark_card_list_02.jpg"> 
+						</div>
+						<div class="right">
+						<div class="name">
+							查看优惠券
+						</div>
+						<div class="tip">
+							优惠详情与使用条款
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+		</div>
+		</div>
+		<div class="footbk">
+			<img src="../img/safe_index_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a onclick="goback(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>	
+	</body>
+<script>
+
+	mui.plusReady(function() {
+		mui.init();
+	   w = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+mui.ajax(ip + "newbegin/modularHappy/mtBookStore", {
+			data: {
+				
+			},
+			dataType: 'json', //服务器返回json格式数据
+			type: 'get', //HTTP请求类型
+			success: function(json) {
+				
+				alert(json['student']);
+				
+				w.close();
+				$("#roll1").empty();
+				var stList = json['student'];
+				var ht = '';
+					for (var a = 0; a < stList.length; a++) {
+						var fuid1="'"+stList[a].fuID+"'";
+						var ip1=ip+stList[a].furl;
+						//alert(ip1s)
+						ht+='<a  href="javascript:goNextPage('+fuid1+');"><div class="item1"><div class="photo">';
+						ht+='<img src="'+ip1+'">';
+						ht+='</div><div class="right"><div class="name">查看优惠券</div><div class="tip">优惠详情与使用条款</div></div></div></a>'	
+						
+					}
+					 $("#roll1").append(ht);
+			},error: function(xhr, type, errorThrown) {
+						//异常处理； 
+						w.close();
+						if (type == 'timeout') {
+							plus.nativeUI.toast("无法连接服务器，请检查网络！", {
+								duration: "long"
+							});
+						} else {
+							plus.nativeUI.toast("异常错误，请联系管理员！", {
+								duration: "long"
+							});
+						}
+					}
+		});
+		
+});
+
+function goNextPage(i){
+	 //alert(i)
+	 plus.storage.setItem("myBookStoreFuid", i.toString());
+	 var id=plus.webview.currentWebview().id;
+	 //alert(id)
+	 //plus.storage.setItem("myHealId", id.toString());
+	//plus.storage.setItem("htype1", type.toString());
+	showFact('Bookmark_card_index.html', '首页', '', 'booklist','');
+}
+
+
+	function goback(){
+	   var id=plus.storage.getItem("myindex");
+	    var wobj = plus.webview.getWebviewById(id.toString());
+        wobj.reload(true);
+		mui.back();
+	}
+	
+</script>
+</html>

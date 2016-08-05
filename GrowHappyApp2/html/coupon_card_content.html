@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/coupon_card_content.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<body>
+		<div class="title">优惠卡详情
+		</div>
+		<div class="content">
+		<div class="photo">
+			<img src="../img/Bookmark_card_index_01.jpg"> 
+		</div>
+		<div class="text">
+			优惠说明优惠说明优惠说明优惠说明优惠说明
+		</div>
+		<div class="split"></div>
+		<div class="tip">
+			使用说明使用说明使用说明使用说明使用说明
+		</div>
+		</div>
+		<div class="bk">		
+		</div>
+		<div class="footbk">
+			<img src="../img/happy_index_10.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a onclick="goback(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+	</body>
+<script>	
+	function goback(){
+		var myid=plus.storage.getItem("myHappyId");
+		var htype1=plus.storage.getItem("htype1")
+		plus.storage.setItem("mytype2",htype1);
+		var wobj = plus.webview.getWebviewById(myid.toString());
+		
+		
+        wobj.reload(true);
+		mui.back();
+		//showFact('../index.html', '首页', '', 'index9','');
+	}
+	
+	</script>
+</html>

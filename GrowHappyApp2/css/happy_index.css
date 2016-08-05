@@ -1,0 +1,262 @@
+.bk
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	z-index: -2;
+}
+.bk1 {
+	position: absolute;
+	left: 5%;
+	top: 0px;
+	width: 85%;
+	height: 80%;
+}
+.bk2 {
+	position: absolute;
+	left: 95%;
+	top: 0px;
+	width: 85%;
+	height: 80%;
+}
+.bk3 {
+	position: absolute;
+	left: 180%;
+	top: 0px;
+	width: 5%;
+	height: 80%;
+	background-color: white;
+}
+.foot {
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+}
+.footbk
+{
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+}
+.footbk img
+{
+	width: 100%;
+}
+.iconbk {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #ff8a01;
+	border-radius: 50%;
+}
+.icon {
+	color: white;
+	font-size: 40px;
+	margin-top: 5px;
+}
+.title {
+	color: #919191;
+	text-align: center;
+	height: 10%;
+	padding: 10px;
+	font-size: 18px;
+}
+.content {
+	height:90%;
+	width: 100%;
+	background-color:#ff8a01;		
+	border-radius: 10px;
+}
+.bk1 .menu
+{
+	padding: 10px 5px;
+	height: 10%;
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+.bk1 .menu_01
+{
+	float: left;
+	width: 39%;
+	background-color: white;
+	color:#ff8a01;
+	padding:2px 5px;
+	border-radius: 20px;
+	text-align: center;
+	border:solid 1px white;
+	margin-right: 5%;
+	margin-left:10%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.bk1 .menu_02
+{
+	float: left;
+	width: 39%;
+	background-color: #ff8a01;
+	color:white;
+	padding:2px 5px;
+	border-radius: 20px;
+	text-align: center;
+	border:solid 1px white;
+	margin-right: 1%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#roll1
+{
+	display: block;
+}
+#roll2
+{
+	display: none;
+}
+#roll3
+{
+	display: none;
+}
+.bk1 .roll
+{
+	height:72%;
+	overflow: auto;
+}
+.bk1 .item
+{
+	clear: both;
+	height: auto;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+.bk1 .item .left
+{
+	float: left;
+	width:35%;
+	padding:0px 5px;
+	height: 60px;
+	display: inline-block;
+}
+.bk1 .item .left img
+{	
+	width:100%;
+	border-radius:5px;
+	height: 55px;
+}
+.bk1 .item .right
+{
+	float: left;
+	width:65%;
+	padding:0px 5px;
+	height: 60px;
+	overflow-y: hidden;
+	display: inline-block;
+}
+.bk1 .item .right .right_title
+{
+	font-size: 14px;
+	color: white;
+}
+.bk1 .item .right .right_text
+{
+	font-size: 12px;
+	color: rgba(255,255,255,0.6);
+}
+.split
+{
+	margin-top: 4%;
+	height:1px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
+}
+.bk1 .up
+{
+	margin-top: 5px;
+	color: white;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.bk1 .down
+{
+	margin-top: 5px;
+	color: white;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.bk2 .content
+{
+	overflow: auto;
+}
+.bk2 .content .top img
+{
+	width: 30px;
+	height: 30px;
+	vertical-align:middle;
+}
+.bk2 .content .top 
+{
+	color: white;
+	font-size: 15px;
+	padding: 10px;
+}
+.bk2 .content .right 
+{
+	float: right;
+}
+.bk2 .content .photo 
+{
+	padding: 10px;
+	overflow: auto;
+}
+.bk2 .content .photo .item
+{
+	float: left;
+	width: 33%;
+	color: white;
+}
+.bk2 .content .photo .item img
+{
+	width: 100%;
+	height: 100px;
+}
+.bk2 .content .photo .item .name
+{
+	
+}
+.bk2 .content .photo .item .time
+{
+	font-size: 12px;
+}
+.bk2 .content .split
+{
+	margin-top: 2%;
+	height:1px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
+}
+.bk2 .content .diary .item
+{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin:5px 0px;
+	color: white;
+	padding-left: 5%;
+}
+.bk2 .content .communication
+{
+	color: white;
+	padding: 10px;
+}
+.bk2 .content .communication .school
+{
+	clear: both;
+}

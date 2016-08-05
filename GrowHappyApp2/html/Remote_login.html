@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<style>
+		body
+		{
+			background-color:white;
+		}
+		.content {
+			padding: 10px;
+			color: #919191;
+			font-size: 18px;
+			margin-top: 15%;
+			height: 90%;
+			width: 100%;
+			color: white;
+			background-color: #ff8a01;
+		}
+		.headlink
+		{
+			color:#919191;
+		}
+		.item
+		{
+			border-bottom:solid 1px white;
+			margin:20px 10px;
+		}
+		.item div
+		{
+			margin:10px 0px;
+			font-size: 14px;
+		}
+		.right
+		{
+			font-size: 20px;
+		}
+		.titleright
+		{
+			float: right;
+			color:#919191;
+			margin-top: 10px;
+			font-size: 14px;
+		}
+	</style>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title headlink">异地登录提醒</h1>
+			<a href="chang_password_student.html"> <span class="titleright">修改密码</span></a>
+		</header>
+		<div class="content" id="cd_my">
+			<!--
+            	作者：419179186@qq.com
+            	时间：2016-03-19
+            	描述：
+          
+		<div class="item">
+			<div>
+				<span>登录时间：</span>
+				<span class="right">2016/3/12 16：24</span>
+			</div>
+			<div>
+				<span>登录地点：</span>
+				<span class="right">浙江杭州</span>
+			</div>
+			<div>
+				<span>登录终端：</span>
+				<span class="right">电脑</span>
+			</div>
+		</div>
+  -->
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.plusReady(function () {
+            mui.init();
+            getinfo();
+           
+        });
+		function getinfo() {
+        	//alert("111");
+            mui.ajax(ip + "newbegin/phone/allopatry", {
+                data: {
+                    category: 'news'
+                },
+                dataType: 'json',//服务器返回json格式数据
+                type: 'get',//HTTP请求类型
+                success: function (json) {
+                    //获得服务器响应
+            if (json['student'] != null) {
+            	var stList = json['student'];
+				var ht = '';
+				for (var a = 0; a < stList.length; a++) {
+					ht+='<div class="item" ><div><span>登录时间：</span><span class="right">'+stList[a].flogintime+'</span></div>'
+					ht+='<div><span>登录地点：</span><span class="right">'+stList[a].faddress+'</span></div>';
+					ht+='<div><span>登录终端：</span><span class="right">'+stList[a].fterminal+'</span></div></div>';
+				}
+				$("#cd_my").append(ht);
+              }
+                }
+            });
+        }
+		
+		
+	</script>
+	
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/safe_detail.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<body>
+		<div class="title">文章详情</div>
+		<div class="content">
+			<div class="text" id="cd_my">				
+			</div>
+			<div class="tip">
+				<span class="date" id="cd_my1"></span>
+				<span class="lib" id="tyyp1"></span>
+			</div>
+			<div class="roll">			
+			<!--<div class="img">
+				<img id="im2" src="">
+			</div>-->
+			<div class="message" id="cd_my3"> 
+			</div>
+			</div>
+		</div>
+		<div class="bk">		
+		</div>
+		<div class="footbk">
+			<img src="../img/safe_detail_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a onclick="goback(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+		
+	</body>
+	<script>
+	mui.plusReady(function() {
+            mui.init();
+
+				var fc= plus.storage.getItem("isafeFuid");
+			    var type= plus.storage.getItem("type");
+			    $("#tyyp1").append(type); 
+			    //alert(fc);
+				mui.ajax(ip + "newbegin/modularSecurity/modSecurityinfo", {
+			data: {
+				fcaalog:fc
+			},
+			dataType: 'json', //服务器返回json格式数据
+			type: 'get', //HTTP请求类型
+			success: function(json) {
+				//获得服务器响应
+				      //var ip1=ip+"newbegin"+json['student'].fimagesurl;
+					   $("#cd_my").append(json['student'].ftitle); //标题
+						$("#cd_my1").append(json['student'].fstrpublishtime); //时间
+						//alert(json['student'].fcontent)
+						$("#cd_my3").append(json['student'].fcontent); //内容
+					
+                       
+			}
+		});
+				
+});
+	
+	
+	function goback(){
+		var wobj
+		var type= plus.storage.getItem("type");
+		if("急救常识"==type){
+			plus.storage.setItem("mytype","1");
+			wobj= plus.webview.getWebviewById("goMyajjcs");
+		}
+		if("安全讲堂"==type){
+			plus.storage.setItem("mytype","2");
+			wobj= plus.webview.getWebviewById("goMyaqjt");
+		}
+		if("安全气象"==type){
+			plus.storage.setItem("mytype","3");
+			wobj= plus.webview.getWebviewById("goMyaqqx");
+		}
+		
+		//var id= plus.storage.getItem("wId");
+		
+        wobj.reload(true);
+		mui.back();
+	}
+	
+	
+	</script>
+
+</html>

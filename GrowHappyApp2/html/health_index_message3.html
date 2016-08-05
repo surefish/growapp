@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+	</head>
+	<style type="text/css">
+		* {
+			font-family: "微软雅黑";
+		}
+		
+		body {
+			background-color: white;
+		}
+		
+		.icon {
+			width: 22%;
+			float: left;
+			margin-left: 2%;
+			margin-top: 10px;
+		}
+		
+		.icon img {
+			width: 100%;
+			border-radius: 30px;
+		}
+		
+		.title {
+			width: 76%;
+			float: left;
+		}
+		
+		.top {
+			background-color: #f0f0f0;
+			height: 100px;
+		}
+		
+		.caption {
+			margin: 10px;
+			font-size: 15px;
+			display: inline-block;
+			width: 95px;
+			text-align: center;
+			line-height: 30px;
+			border-radius: 30px;
+			color: #86d949;
+		}
+		
+		.caption img {
+			width: 15px;
+			margin-left: 5px;
+			vertical-align: middle;
+		}
+		
+		.mycolor1 {
+			background-color: #86d949;
+			color: white;
+		}
+		
+		.page1 {
+			margin: 0px 5px;
+			display: none;
+		}
+		
+		.page2 {
+			display: none;
+		}
+		
+		.page3 {
+			
+		}
+		
+		.page4 {
+			display: none;
+		}
+		
+		.text {
+			text-indent: 2em;
+			font-size: 15px;
+		}
+		
+		.page3 ul {
+			padding: 0px 15px;
+		}
+		
+		.page3 .pic {
+			float: left;
+			width: 40%;
+			height: 70px;
+		}
+		
+		.page3 .pic img {
+			width: 90%;
+			height: 100%;
+		}
+		.page3 .text
+		{
+			float: left;
+			width: 60%;
+		}
+		.page3 .title {
+			font-weight: bold;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			width: 100%;
+			float: none;
+		}
+		
+		.page3 .detail {
+			font-size: 10px;
+			height: 48px;
+			color: #8C8C8C;
+			line-height: 16px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+		}
+		
+		.page3 li {
+			list-style: none;
+			border-top: solid 1px #a8a8a8;
+			padding: 10px 0px;
+			overflow: auto;
+		}
+		
+		.page3 li:nth-of-type(even) {
+			background-color: #e4e4e4;
+		}
+		.page2 button
+		{
+			margin-left: 20%;
+			width: 60%;
+			background-color:#86d949 ;
+			color: white;
+			border-radius: 10px;
+		}
+		.text img
+		{
+			width: 100%;
+			padding: 10px;
+		}
+		a
+		{
+			color: black;
+		}
+		.ydqw
+		{
+			float: right;
+		}
+	</style>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background-color: #86d949;">
+			<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav" style="color: white;"></span>
+			</button>
+			<h1 class="mui-title" style="color:white">眼科</h1>
+		</header>
+		<div style="margin-top: 45px;">
+			<div class="top">
+				<div class="icon"><img src="../img/health_index_message3_01.jpg"> </div>
+				<div class="title">
+					<div>
+						<span id="page1" class="caption" onclick="changecolor1()">团队风采</span>
+						<span id="page2" class="caption" onclick="changecolor2()">预约挂号</span>
+					</div>
+					<div>
+						<span id="page3" class="caption mycolor1" onclick="changecolor3()">眼科讲堂</span>
+						<span id="page4" class="caption" onclick="changecolor4()">知识问答</span>
+					</div>
+				</div>
+		</div> 
+			<div class="page1 text">
+				<div class="text">
+					<p>嘉兴市中医医院始建于1959年，是嘉兴市属集医疗、教学、科研、康复保健为一体的综合性、现代化的国家级三级甲等中医医院。系国家重点建设中医院，浙江省文明单位，浙江省中医名院建设单位，浙江省首批“绿色医院”和“健康促进医院”，是国际紧急救援中心网络医院，为浙江中医药大学附属医院，以及省内外多所高等医学院校教学医院。</p>
+					<img src="../img/health_index_message3_03.jpg">
+					<p>1942年邵传统先生在张家弄（原勤俭路中段）开设邵氏眼科诊所。1956年成立联合诊所创立中医院眼科。1995年9月，被省卫生厅确定为“浙江省中医眼底病治疗建设基地”。 1997年10月，眼科“浙江省中医眼底病基地”建设通过浙江省中医管理局及专家组的中期评估。2000年1月，眼底病基地建设通过省内外专家验收，经省卫生厅审核批准，并挂牌“浙江省中医临床眼底病医疗中心”。2005年3月，成立眼科中心暨近视眼激光治疗中心,市卫生局严吉丹副局长和眼科创始人邵传统先生为两个中心的成立揭牌。2007年12月，被列为国家中医药管理局“十一五”重点专科建设项目。</p>
+					<img src="../img/health_index_message3_02.jpg">
+					<p>经过几代人近半个世纪的努力，眼科已经建成为浙北地区最具规模和最有影响的眼科，为浙江省中医临床眼底病医疗中心，国家级重点建设学科。目前拥有专科门诊近400平方米、独立的近视激光治疗中心、2个病区、2个独立的千级层流手术室，专科设备超千万元。</p>
+					<p>我科在多个眼科领域，尤其是眼底病、眼表疾病等领域，运用中医理论，采用中医中药方法，如中药内服或外敷、中药电离子导入、中药穴位注射、中药熏蒸、针灸等。科室拥有良好的人才梯队，并且聘请国家级名中医定期来我院坐诊，对骨干人才进行代教，使我科在中医中药这一传统治疗领域达到了一个新的高度。</p>
+					<p>随着学科建设日益完善，眼科形成了“专科、专病、专人、专治”的诊疗特色。目前，该科开设屈光专科、白内障专科、眼底病专科、小儿斜视弱视专科，青光眼专科，眼表泪道专科，眼眶病及眼部整形专科等七大专科组。开展各类眼科手术。使广大患者在嘉兴本地就可享受到眼病全方位诊断和治疗。</p>
+				</div>
+			</div>
+			<div class="page2">
+				<div class="text">
+				<div>今日剩余号：<span style="color:red">5</span></div>
+				<p>预约须知： </p>
+				<p>1、预约挂号服务包括专家门诊与普通门诊，目前仅限已有社保卡或健康卡并已在本院注册的患者使用。网上预约挂号一律采用实名制，填写信息与社保卡或健康卡上的姓名和卡号一致，联系方式必须为手机号码，以便有事及时联系您。 </p>
+ 				<p>	2、网上预约挂号服务免费，挂号费在来院就诊时收取。专家门诊实行限额预约挂号，限额满后将不再予以预约，敬请谅解。 </p>
+				<p>	3、网上预约时间为十天，且必须提前一个工作日（即当天下午15点前可预约明天至十天内的专家号，当天下午15点后可预约后天至七天内的专家号）。每位患者同一日同一科室只能预约一个号源。 </p>
+				<a href="javascript:goyygh();"> <button>我要预约</button></a>
+				</div>
+			</div>
+			<div class="page3">
+				<div class="content" id="pullrefresh">
+					
+						
+					
+					
+						<!--
+						<li>
+							<div class="pic">
+								<img src="../img/health_index_message2_02.jpg">
+							</div>
+							<div class="text">
+								<div class="title">液晶显示屏 更易刺伤眼睛吗</div>
+								<div class="detail">　往往人们在使用电脑的时候，总觉得推陈出新的总是最好的，无论从方便使用，还是眼睛视力角度，都认为液晶显示屏更好。事实真的是如此吗？</div>
+							</div>
+						</li>-->
+					
+				</div>
+			</div>
+			<div class="page4">
+				<div class="text">
+					<p>问：宝宝如何正确使用眼药水？</p>
+					<p>答：滴眼药水时，让孩子取仰卧位或坐位，头略后仰，眼向上看。操作者用左手拇指或棉签轻轻扒开患儿下睑，暴露下结膜囊，右手持眼药瓶或滴管将眼药水滴入结膜囊内，再将上睑稍提起后轻合上，使整个结膜囊内充盈眼药水，嘱孩子闭眼2分钟。如眼部附有分泌物或眼膏，应先用消毒棉签拭去，再滴眼药水。</p>
+					<p>问：为什么3D电影公开＂惹怒＂眼科医生？</p>
+					<p>答：3D特技运用“双眼分视”原理打造的超强立体感，使观众注意力高度集中，眼睛的聚焦也不断变化，长时间观看，会造成眼睛高度疲劳。对于青光眼高危人群来说，这样的视觉刺激很危险，容易引起瞳孔放大、眼压升高，导致急性青光眼发作。</p>
+				</div>
+			</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/common/jquery-1.8.0.min.js"></script>
+	<script src="../js/common/config.js"></script>
+	<script src="../js/common/app.js"></script>
+	<script>mui.plusReady(function() {
+	mui.init();
+	getEyes();
+});
+
+var w;
+var mytype="all";
+var mytime="all";
+
+function getEyes() {
+	w = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+	mui.ajax(ip + "newbegin/index/eyes", {
+		data: {
+			catalog: mytype,
+			mytime: mytime,
+		},
+		dataType: 'json', //服务器返回json格式数据
+		type: 'get', //HTTP请求类型
+		success: function(json) {
+			//获得服务器响应
+			w.close();
+			$("#pullrefresh").empty();
+			if (json['student'] != null) {
+				var stList = json['student'];
+				var ht = '<ul id="text">';
+				for (var a = 0; a < stList.length; a++) {
+					var ip1 = stList[a].fimagesurl;
+					var fuid1 = "'" + stList[a].fuID + "'";
+					ht += '<li><a href="javascript:goNextPage(' + fuid1 + ');"><div class="pic"><img src="' + ip1 + '"></div>';
+					ht += '<div class="text"><div class="title">' + stList[a].ftitle + '</div></div>';
+					ht += '<div class="detail">' + stList[a].ftag + '</div>';
+					ht += '<span class="ydqw">阅读全文</span></a></li>';
+				}
+				ht+='</ul>';
+				//alert(ht)
+				$("#pullrefresh").append(ht);
+			}
+		}
+	});
+
+}//查看眼科文章详情	
+function goNextPage(i){
+	 var id=plus.webview.currentWebview().id;
+	 plus.storage.setItem("mydqckID", id.toString());
+	 plus.storage.setItem("mymessFUID", i.toString());
+	 
+	showFact('health_index_message_info.html', '首页', '', 'health_index_message_info','');
+}
+	
+	
+		function changecolor1() {
+			$(".caption").removeClass("mycolor1");
+			$("#page1").addClass("mycolor1");
+			$("#page3 img").attr("src", "../img/CulturalCenter_infomation_01.jpg");
+			$('.page2').css('display', 'none');
+			$('.page3').css('display', 'none');
+			$('.page4').css('display', 'none');
+			$('.page1').css('display', 'block');
+		}
+
+		function changecolor2() {
+			$(".caption").removeClass("mycolor1");
+			$("#page2").addClass("mycolor1");
+			$("#page3 img").attr("src", "../img/CulturalCenter_infomation_01.jpg");
+			$('.page2').css('display', 'block');
+			$('.page1').css('display', 'none');
+			$('.page3').css('display', 'none');
+			$('.page4').css('display', 'none');
+		}
+
+		function changecolor3() {
+			//alert("眼科");
+			getEyes();
+			$(".caption").removeClass("mycolor1");
+			$("#page3").addClass("mycolor1");
+			$("#page3 img").attr("src", "../img/CulturalCenter_infomation_02.jpg");
+			$('.page3').css('display', 'block');
+			$('.page1').css('display', 'none');
+			$('.page2').css('display', 'none');
+			$('.page4').css('display', 'none');
+		}
+
+		function changecolor4() {
+			$(".caption").removeClass("mycolor1");
+			$("#page4").addClass("mycolor1");
+			$("#page3 img").attr("src", "../img/CulturalCenter_infomation_01.jpg");
+			$('.page4').css('display', 'block');
+			$('.page1').css('display', 'none');
+			$('.page2').css('display', 'none');
+			$('.page3').css('display', 'none');
+		}
+		
+		function goyygh(){
+			//health_index_message4.html
+			alert("正在对接中！敬请期待!");
+			return;
+		}
+		
+	</script>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/mui.min.js "></script>
+		<script src="js/index.js"></script>
+		<script src="js/common/jquery-1.8.0.min.js"></script>
+		<script src="js/common/app.js"></script>
+		<script src="js/common/config.js"></script>
+	</head>
+	<body>
+		<div class="bk"><img src="img/index_14.jpg" >		
+		</div>
+		<a href="html/setting.html">
+		<span class="mui-icon mui-icon-gear toptool_left"></span>	
+		</a> 
+		<span class="toptext">成长快乐</span>
+		<!--消息---------消息消息----消息消息消息----------->
+		<a href="javascript:goNext2('1');">
+		<span class="mui-icon mui-icon-chat toptool_right"></span>	
+		</a> 
+		<div class="body_left">
+			<a href="javascript:gomessmy();">
+			<div class="menu_01">
+				<img src="img/index_01.jpg"> 
+			</div></a>
+			<!--去相册列表----------相册列表相册列表相册列表相册列表相册列表---------->
+			<a href="javascript:goxclb();"> 
+			<div class="menu_02">
+				<img src="img/index_32.jpg"> 
+			</div>
+			</a>
+		</div>
+		<div class="body_center">
+			<img id="imtx">
+			<div class="vip">
+			<img src="img/index_05.jpg"> 	
+			</div>		 
+		</div>
+		<div class="body_right">
+			<!--去选课-------选课选课选课选课选课--------------->
+			<a href="javascript:goxxuanke();"> 
+			<div class="menu_03">
+				<img src="img/index_27.jpg"> 
+			</div>
+			</a>
+			<!--去我的信息---------------我的信息我的信息我的信息我的信息-->
+			<a href="javascript:gogrInfo();">
+			<div class="menu_04">
+				<img src="img/index_04.jpg"> 
+			</div>
+			</a> 
+		</div>
+		<div class="content">
+			<div class="name"><p id="fname"></p></div>
+			<div class="old"><p id="fage"></p></div>
+			<div class="choose">
+				<span class="item_01"  onclick="item_01()">
+					<img src="img/index_11.jpg" id="menu1"> 
+					安全
+				</span>
+				<span class="item_02"  onclick="item_02()">
+					<img src="img/index_12.jpg" id="menu2"> 
+					健康
+				</span>
+				<span class="item_03"  onclick="item_03()">
+					<img src="img/index_13.jpg" id="menu3"> 
+					快乐
+				</span>
+			</div>
+			<div class="safe" id="safe">
+				<div class="info">
+					
+						<!--<img src="img/index_10.jpg">  -->
+					<img id="im" src="">
+					<div id="cd_my" class="info_text"></div>
+				</div>
+				<div class="list">
+					
+					<div class="item">
+						<a href="javascript:goNextaqqx();">
+						<img src="img/index_07.jpg">
+						<div>安全气象</div></a>
+					</div>
+					<div class="Split"></div>
+					<div class="item">
+						<a href="javascript:goNextaqjt();">
+						<img src="img/index_08.jpg">
+						<div>安全讲堂</div></a>
+					</div>
+					<div class="Split"></div>
+					<div class="item">
+						<a href="javascript:goNext('1');">
+						<img src="img/index_06.jpg">
+						<div>急救常识</div></a>
+					</div>
+				</div>
+				<div class="split"></div>
+				
+				<div class="route">
+					<div class="routeimg">
+						</div><div class="routeimg">
+						</div>
+						<div class="routetext">
+							</div>
+					<!--去路径 -->
+					<!--
+                    	
+                    
+					<a href="html/safe_index_02.html">
+					<div class="routeimg">
+						<img src="img/index_09.jpg">
+					
+					<div class="routetext">
+						出行路径
+						<marquee loop="-1" direction="down" height="40px" scrollamount="1">
+							<div>8:15 嘉兴市同心公寓</div>
+							<div>9:15 嘉兴市第一小学</div>
+							<div>10:15 嘉兴市第二医院</div>
+						</marquee>
+					</div>
+					</a>-->
+				</div>
+				<a> <div class="nextpage"></div></a>
+			</div>
+			<div class="health" id="health">
+				<div class="info">
+					<!--
+					<img src="img/index_15.jpg"> 
+					<div class="info_text">健康资讯: <span>中小学生肥胖症检出率高达15.5%</span></div> -->
+					<img id="im1" src="">
+					<div id="cd_my1" class="info_text"></div>
+					
+				</div>
+				<div class="split"></div>
+				<div class="sport">
+					<!--去每日一测-->
+					<a href="javascript:goNext8('5');">
+					<div class="left" id="MRYD">
+						
+					</div>
+					<div class="right">
+						<div class="top">
+							<div class="sport">
+								今日运动
+							</div>
+							<div class="detail">
+								<span class="mui-icon mui-icon-bars"></span>查看详情
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="percent">%</div>
+						<div class="outside">
+							<div class="inside">
+							</div>
+						</div>
+						</div></a>
+					</div>
+				</div>
+				<div class="split2"></div>
+				<div class="list">
+					<div class="item">
+						
+						<a href="javascript:goNext6('1');">
+						<img src="img/index_29.jpg"> 
+						<div class="itemtitle">
+							<div>健康</div>
+							<div>讲堂</div>
+						</div></a>
+						
+						
+						
+					</div>					
+					<div class="item">
+					<a href="javascript:goNext1('2');">
+						<img src="img/index_30.jpg">
+						<div class="itemtitle">
+							<div>营养</div>
+							<div>园地</div>
+						</div>
+					</div>
+					</a>
+					<div class="item">
+					<a href="javascript:goNext4('4');">
+						<img src="img/index_16.jpg"> 
+						<div class="itemtitle">
+							<div>问卷</div>
+							<div>调查</div>
+						</div>
+                       
+						
+					</div>
+				</div>
+			</div>
+			<div class="happy" id="happy">
+				<div class="info">
+					<!--
+					<img src="img/index_19.jpg"> 
+					<div class="info_text">亲子活动: <span>亲子制汤圆，喜迎元宵佳节</span></div>-->
+					<a href="javascript:void(0);">
+					<img id="im2" src="">
+					<div id="cd_my2" class="info_text"></div>
+					
+					
+				</div></a>
+				<a href="javascript:goshhd('1');">
+				<div class="activity">
+					<div class="activityimg">
+						<img src="img/index_20.jpg">
+					</div>
+					
+					<div class="activitytext">
+						快乐学习	
+						<div class="activitydetail">嘉兴第一小学户外农活</div>
+						<div class="activitydetail">城市卫生小先锋劝导员</div>
+						<div class="activitydetail">少先队员游南湖学习实践</div>
+					</div></a>
+				</div>
+				<div class="split"></div>
+				<div class="list">
+					<a href="javascript:goNext5('1');">
+					<div class="item">
+						<img src="img/index_31.jpg"> 
+						<div>优惠卡</div> 
+					</div></a>
+					<div class="Split"></div>
+					<a href="javascript:goczxc('1')"> 
+					<div class="item">
+						<img src="img/index_21.jpg"> 
+						<div>成长相册</div>
+					</div></a>
+					<div class="Split"></div>
+					<!--去亲子活动：活动报名”、”快乐分享-->
+					<a href="javascript:goNext3('1');">
+					<div class="item">
+						<img src="img/index_23.jpg"> 
+						<div>亲子活动</div>
+					</div></a>
+					<a href="javascript:goshhd('1');">
+					<div class="item">
+						<img src="img/index_23.jpg"> 
+						<div>快乐学习</div>
+					</div></a>
+				
+					<a href="javascript:goNext7('3');">
+						<div class="item">
+						<img src="img/index_23.jpg"> 
+							<div>心语乐园</div>
+					</div></a> 
+					
+						<a href="javascript:gomessmy();">
+					<div class="item">
+						<img src="img/index_23.jpg"> 
+						<div>通讯资料</div>
+					</div></a>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+<script>
+ var fpeopleType="";
+mui.plusReady(function() {
+	mui.init();
+	//用户类型 student  visitor  null(全功能)
+    fpeopleType=plus.storage.getItem("fpeopleType");
+	
+	 
+	});
+
+	function gomessmy(){
+		alert("正在开发中，敬请等待哦");
+		return;
+	}
+	
+	//去选课
+	function goxxuanke(){
+		if('visitor'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}if('student'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}else{
+			plus.storage.setItem("meuntype", "2");//健康
+		    showFact('html/school_index.html', '首页', '',"go_xk",'');
+		}
+	}
+	
+	//去我的信息
+	function gogrInfo(){
+		if('visitor'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}else{
+			plus.storage.setItem("meuntype", "2");//健康
+		    showFact('html/myinformation.html', '首页', '',"go_myinfo",'');
+		}
+	}
+	 //去相册-相册列表
+	function goxclb(){
+		if('visitor'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}else{
+			plus.storage.setItem("meuntype", "2");//健康
+		    showFact('html/photo_list.html', '首页', '',"photo_xclb",'');
+		}
+	}
+	
+	 //去安全气象
+	function goNextaqqx(){
+		    //安全气象3，安全讲堂2，急救常识1
+		    plus.storage.setItem("meuntype", "1");//安全
+			plus.storage.setItem("mytype","3");//选中哪块
+            showFact('html/safe_index_0101.html', '首页', '',"goMyaqqx",'');
+           
+            
+		}
+	//去安全讲堂
+	function goNextaqjt(){
+		    //安全气象3，安全讲堂2，急救常识1
+		    plus.storage.setItem("meuntype", "1");//安全
+			plus.storage.setItem("mytype","2");//选中哪块
+            showFact('html/safe_index_01.html', '首页', '',"goMyaqjt",'');
+           
+            
+		}
+
+	//去急救常识
+	function goNext(i){
+		       //安全气象3，安全讲堂2，急救常识1
+		    plus.storage.setItem("meuntype", "1");//安全
+			//plus.storage.setItem("mytype", i.toString());//选中哪块
+			//var s=i+"safe_index_01";
+            //showFact('html/safe_index_01.html', '首页', '',s.toString(),'');
+            showFact('html/emergency_treatment.html', '首页', '',"emergency_treatment",'');
+            
+		}
+	
+	//去健康 --健康讲堂
+	function goNext6(i){
+		    plus.storage.setItem("meuntype", "2");//健康
+			//plus.storage.setItem("mytype3","1");//
+            showFact('html/health_index_04.html', '首页', '',"health_index_04",'');
+         
+		}
+	//去健康  --营养园地
+	function goNext1(i){
+		    plus.storage.setItem("meuntype", "2");//健康
+			plus.storage.setItem("mytype1","1");//营养园地  选择第1个
+			var s=i+"ealth_index";
+            showFact('html/health_index_02.html', '首页', '',s.toString(),'');
+		}
+	//去健康  --心语乐园
+	function goNext7(i){
+		alert("正在开发中，敬请等待哦");
+		return;
+		    //plus.storage.setItem("meuntype", "2");//健康
+			//plus.storage.setItem("mytype1","1");//营养园地  选择第1个
+			//var s=i+"ealth_index";
+            //showFact('html/health_index_03.html', '首页', '',s.toString(),'');
+		}
+	//去健康 --每日一测
+	function goNext8(i){
+		
+		  if('visitor'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}if('student'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}else{
+			 plus.storage.setItem("meuntype", "2");//健康
+			//plus.storage.setItem("mytype1","1");//营养园地  选择第1个
+			var s=i+"ealth_index";
+            showFact('html/health_index_01.html', '首页', '',s.toString(),'');
+		}
+		}
+	//去健康 --问卷调查
+	function goNext4(i){
+		    plus.storage.setItem("meuntype", "2");//健康
+			plus.storage.setItem("mytype3","1");//我的问卷  选择第1个
+            showFact('html/questionnaire_index.html', '首页', '',"questionnaire_index",'');
+         
+		}
+	
+	//去消息
+	function goNext2(i){
+		    //var id=plus.webview.currentWebview().id;
+			//plus.storage.setItem("myid1", id.toString());//当前窗口主键
+            showFact('html/info.html', '首页', '',"info_001",'');
+		}
+	
+	//去快乐--亲子活动
+	function goNext3(i){
+		   //活动报名”、”快乐分享
+		    plus.storage.setItem("meuntype", "3");//快乐
+			plus.storage.setItem("mytype2","1");//活动报名
+            showFact('html/happy_index_03.html', '首页', '',"happy_001",'');
+            
+           
+		}
+    //去快乐--社会活动
+	function goshhd(i){
+		if('visitor'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}else{
+			plus.storage.setItem("meuntype", "3");//快乐
+		    plus.storage.setItem("mytype2","1");//名师讲学,学习分享,微课堂
+		    showFact('html/happy_index_04.html', '首页', '',"happy_002",'');
+		}
+		
+		
+		
+	}
+	
+    //去快乐--成长相册
+	function goczxc(i){
+		if('visitor'==fpeopleType){
+			alert("您好，您暂时没有这个权限去访问！");
+		    return;
+		}else{
+			plus.storage.setItem("meuntype", "2");//健康
+		    showFact('html/photo_list.html', '首页', '',"photo_xclb",'');
+			//plus.storage.setItem("meuntype", "3");//快乐
+		    //showFact('html/photo.html', '首页', '',"happy_003",'');
+		}
+		
+		
+	}
+	
+	
+	
+	//去优惠卡
+	function goNext5(i){
+		    plus.storage.setItem("meuntype", "3");//快乐
+            showFact('html/Bookmark_card_list.html', '首页', '',"BookStoreList",'');
+         
+		}
+	
+	
+	
+</script>
+</html>

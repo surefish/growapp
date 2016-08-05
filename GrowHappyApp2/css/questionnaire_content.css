@@ -1,0 +1,125 @@
+.foot {
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+}
+
+.footbk {
+	position: fixed;
+	bottom: -10px;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.footbk img {
+	width: 100%;
+}
+img
+{
+	width: 100%;
+}
+.iconbk {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #86d949;
+	border-radius: 50%;
+	border:solid 1px #78c241;
+}
+
+.icon {
+	color: white;
+	font-size: 40px;
+	margin-top: 5px;
+}
+
+.bk {
+	position: fixed;
+	top:48%;
+	left: 0px;
+	height: 47%;
+	width: 100%;
+	background-color: #86d949;
+	z-index: -1;
+}
+body
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0px;
+	left: 0px;
+}
+.title
+{
+	text-align: center;
+	color: #919191;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	padding-top: 10px;
+	width: 100%;
+}
+.content
+{
+	background-color: #86d949;
+	margin-top:13%;
+	height:90%;
+	width: 100%;
+	color: white;
+	overflow: auto;
+}
+.questions
+{
+	padding: 10% 5%;
+}
+.item
+{
+	padding:0px 5%;
+	overflow: auto;
+}
+.radio
+{
+	float: left;
+	width: 50%;
+}
+.radio input[type="radio"]
+{
+	width: 15px;
+	height: 15px;
+}
+.up
+{
+	margin-top: 5%;
+	padding:5px 5%;
+	float: left;
+	width: 30%;
+	margin-left: 10%;
+	border:solid 1px white;
+	border-radius: 5px;
+}
+.down
+{
+	margin-top: 5%;
+	padding:5px 5%;
+	float: left;
+	width: 30%;
+	margin-left: 10%;
+	border:solid 1px white;
+	border-radius: 5px;
+}
+.split
+{
+	margin-top: 2%;
+	height: 1px;
+	width:90%;
+	margin-left: 5%;
+	background:rgba(255,255,255,0.7);
+}
+a
+{
+	color: white;
+}

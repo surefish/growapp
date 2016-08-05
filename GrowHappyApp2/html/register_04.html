@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<style type="text/css">
+			.top
+			{
+				margin-top:70px;
+				width: 100%;
+			}
+			.sub
+			{
+				margin-top:20px !important;
+				width:90% !important;
+				margin:0px 5%;
+				background-color:#ff8a01 !important;
+				border:solid 1px #ff8a01 !important;
+				border-radius:5px !important;
+				color: white;
+				height:40px !important;
+				font-size:16px !important;
+			}
+			.title
+			{
+				width: 100%;
+				text-align: center;
+				color:#c8c8c8;
+				font-size: 18px;
+			}
+			.number
+			{
+				margin:20px 0px;
+				width: 100%;
+				text-align: center;
+				color:#ff8a01;
+				font-size:40px;
+				font-weight: bold;
+			}
+			.tip
+			{
+				width: 100%;
+				text-align: center;
+				color:#c8c8c8;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav" style="color:#919191;"></span>
+			</button>
+			<h1 class="mui-title" style="color:#919191;">注册</h1>
+		</header>
+		<div class="top">
+			<div class="title">请牢记您的邀请码</div>
+			<div class="number"><span id="MYfuid"></span></div>
+			<div class="tip">邀请码用于家长账户注册验证</div>
+			<div class="tip">邀请码可在“设置——我的邀请码”中查看</div>
+		</div>
+		
+		<button class="sub" onclick="go();" >继&nbsp;&nbsp;&nbsp;续</button>
+	</body>
+<script language="javascript">
+mui.plusReady(function() {
+				mui.init();
+				$("#MYfuid").html(plus.storage.getItem("stuRegCode"));	
+				plus.storage.clear();
+		});
+		function go(){
+			showFact('../login.html', '首页', '', 'index3','');
+			
+		}
+		
+		
+
+</script>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/historical_data.css">
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title headlink">历史数据</h1>
+		</header>
+		<div class="content">
+			<div class="card">
+				<div class="head" id="date1"></div>
+				<div class="growinfo">
+					<div class="item">
+						身高：<a id="fheight"></a>cm
+						<span><img src="../img/historical_data_03.jpg"> </span>
+					</div>
+					<div class="item">
+						体重：<a id="fweight"></a>kg
+						<span><img src="../img/historical_data_03.jpg"> </span>
+					</div>
+					<div class="item">视力：矫正前：左： <a id="fleftv"></a>  右：<a id="frightv"></a>
+						<span><img src="../img/historical_data_03.jpg"> </span>
+					</div>
+					<div class="item">矫正后：左：<a id="fleftv1"></a>右：<a id="frightv1"></a>
+						<span><img src="../img/historical_data_03.jpg"> </span>
+					</div>
+					<div class="item">
+						诊断结果：<a id="fresult"></a>
+						<span><img src="../img/historical_data_03.jpg"> </span>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+			<!--
+            	作者：419179186@qq.com
+            	时间：2016-03-18
+            	描述：
+            
+			<div class="card">
+				<div class="head">体检时间 ：<span class="date">2015/2</span></div>
+				<div class="growinfo">
+					<div class="item">
+						身高：130CM
+						<span></span>
+					</div>
+					<div class="item">
+						体重：33kg
+						<span></span>
+					</div>
+					<div class="item">视力：矫正前：左：4.0 右：5.0</div>
+					<div class="item">矫正后：左：5.0 右：5.0
+						<span></span>
+					</div>
+					<div class="item">
+						诊断结果：正常
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>-->
+	</body>
+<script src="../js/mui.min.js"></script>
+<script>
+	mui.plusReady(function() {
+		mui.init();
+		getinfo();
+	});
+
+	function getinfo() {
+		mui.ajax(ip + "newbegin/myinformation/oldHealthy", {
+				data: {
+					category: 'news'
+				},
+				dataType: 'json', //服务器返回json格式数据
+				type: 'get', //HTTP请求类型
+				success: function(json) {
+					//获得服务器响应
+					if (json['student'] != null) {
+						//alert("11")
+						var s1 = "体检时间 ：";
+						var s2 = '<span class="date">' + json['student'].ffilldate + '</span>';
+						$("#date1").append(s1+s2);
+						$("#fheight").html(json['student'].fheight); //身高
+						$("#fweight").html(json['student'].fweight); //体重
+						//$("#ftooth").html(json['student'].ftooth);//牙齿
+						$("#fleftv").html(json['student'].fleftv); //左眼-视力
+						$("#frightv").html(json['student'].frightv); //右眼-视力
+						$("#fleftv1").html(json['student'].fleftv); //左眼-视力
+						$("#frightv1").html(json['student'].frightv); //右眼-视力
+						$("#fresult").html(json['student'].fresult); //诊断结果
+					}
+				}
+		});
+	}
+</script>
+</html>

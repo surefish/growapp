@@ -1,0 +1,1739 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5E30A204",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "成长快乐",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "4.0.1",/*应用版本名称*/
+		"code": "1"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "start.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+		"Audio": {
+			"description": "访问麦克风"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Camera": {
+			"description": "访问摄像头"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+		"Geolocation": {
+			"description": "访问位置信息"
+		},
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+		"Messaging": {
+			"description": "访问通讯能力"
+		},
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+		"Barcode": {
+			"description": "管理二维码扫描插件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,
+			"delay": "0"
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary",
+				"portrait-secondary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png",
+						"retina8": "unpackage/res/icons/180x180.png",
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/320x480.png", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/640x960.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/640x1136.png","retina55":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/1242x2208.png","retina47":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/750x1334.png","retina55l":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/2208x1242.png"
+					},
+					"ipad": {
+						"portrait": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/768x1004.png", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/1536x2008.png",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/1024x748.png", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/2048x1496.png", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/768x1024.png", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/1536x2048.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/1024x768.png", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": "C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/2048x1536.png"
+					}
+				},
+				"android": {"hdpi":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/480x762.png","ldpi":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/320x442.png","mdpi":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/240x282.png","xhdpi":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/720x1242.png","xxhdpi":"C:/Users/Administrator/Desktop/资料/GrowHappy/新建文件夹 (2)/1080x1882.png"
+					
+					
+					
+					
+					
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"login.html": {
+				"resources": [
+					"js/mui.min.js",
+					"img/login_01.jpg",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"img/login_02.jpg",
+					"html/register_01.html",
+					"index.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js",
+					"js/common/mui.min.js",
+					"js/login_myjs.js"
+				],
+				"refer": [
+					"index.jsp"
+				],
+				"priority": 0
+			},
+			"html/register_01.html": {
+				"resources": [
+					"html/register_02.html",
+					"login.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"html/register_05.html",
+					"html/register_07.html",
+					"html/register_08.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/register_02.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"html/register_01.html",
+					"html/register_03.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/register_03.html": {
+				"resources": [
+					"html/register_02.html",
+					"html/register_04.html",
+					"img/register_01.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/register_04.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"html/register_03.html"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"html/register_05.html": {
+				"resources": [
+					"html/register_06.html",
+					"html/register_01.html",
+					"css/style.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/register_06.html": {
+				"resources": [
+					"html/register_05.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"img/register_01.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index.html": {
+				"resources": [
+					"img/index_03.jpg",
+					"img/index_07.jpg",
+					"img/index_01.jpg",
+					"fonts/mui.ttf",
+					"img/index_04.jpg",
+					"css/style.css",
+					"img/index_14.jpg",
+					"img/index_05.jpg",
+					"css/index.css",
+					"img/index_06.jpg",
+					"js/mui.min.js",
+					"img/login_01.jpg",
+					"img/index_08.jpg",
+					"css/mui.min.css",
+					"img/index_10.jpg",
+					"img/index_09.jpg",
+					"img/index_02.jpg",
+					"img/index_15.jpg",
+					"js/index.js",
+					"img/index_13.jpg",
+					"html/safe_index.html",
+					"img/index_21.jpg",
+					"img/index_19.jpg",
+					"img/index_12.jpg",
+					"img/index_11.jpg",
+					"img/index_17.jpg",
+					"img/index_20.jpg",
+					"img/index_24.jpg",
+					"img/index_22.jpg",
+					"img/index_18.jpg",
+					"img/index_26.jpg",
+					"img/index_23.jpg",
+					"img/index_16.jpg",
+					"img/index_25.jpg",
+					"login.html",
+					"html/health_index.html",
+					"html/happy_index.html",
+					"js/common/jquery-1.8.0.min.js",
+					"html/setting.html",
+					"html/purse.html",
+					"html/photo.html",
+					"html/myinformation.html",
+					"html/info.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"html/safe_index_01.html",
+					"html/health_index_01.html",
+					"html/health_index_02.html",
+					"html/questionnaire_index.html",
+					"html/safe_index_02.html",
+					"img/index_28.jpg",
+					"img/index_27.jpg",
+					"img/index_29.jpg",
+					"img/index_31.jpg",
+					"img/index_30.jpg",
+					"html/health_index_04.html",
+					"html/Bookmark_card_index.html",
+					"html/school_choose_index.html",
+					"html/school_index.html",
+					"html/health_index_03.html",
+					"img/index_32.jpg",
+					"html/photo_list.html",
+					"img/login_03.jpg",
+					"img/index_32.jpg",
+					"img/login_03.jpg"
+				],
+				"refer": [
+					"html/happy_index_01.html",
+					"html/Bookmark_card_list.html",
+					"html/happy_index_03.html",
+					"html/happy_index_04.html",
+					"html/Bookmark_card_list.html",
+					"html/happy_index_04.html",
+					"html/happy_index_03.html",
+					"html/safe_index_0101.html",
+					"html/emergency_treatment.html"
+				],
+				"priority": 0
+			},
+			"html/safe_index.html": {
+				"resources": [
+					"css/safe_index.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_10.jpg",
+					"img/index_14.jpg",
+					"css/style.css",
+					"img/safe_index_01.jpg",
+					"img/safe_index_04.jpg",
+					"img/safe_index_02.jpg",
+					"img/safe_index_03.jpg",
+					"js/safe_index.js",
+					"index.html",
+					"html/safe_detail.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/health_index.html": {
+				"resources": [
+					"img/health_index_06.jpg",
+					"index.html",
+					"img/health_index_04.jpg",
+					"img/health_index_02.jpg",
+					"img/health_index_03.jpg",
+					"css/health_index.css",
+					"img/health_index_07.jpg",
+					"img/safe_index_01.jpg",
+					"img/health_index_01.jpg",
+					"img/safe_index_02.jpg",
+					"js/health_index.js",
+					"img/health_index_05.jpg",
+					"html/sports_detail3.html",
+					"html/sports_detail.html",
+					"img/index_15.jpg",
+					"img/index_10.jpg",
+					"html/sports_detail2.html",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"img/index_14.jpg",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/sports_detail.html": {
+				"resources": [
+					"img/sport_detail_02.jpg",
+					"img/share_02.png",
+					"img/share_04.png",
+					"css/sport_deail.css",
+					"img/share_01.png",
+					"img/sport_detail_01.jpg",
+					"img/share_03.png",
+					"html/health_index.html",
+					"html/health_index_01.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/sports_detail3.html": {
+				"resources": [
+					"js/echarts-all.js",
+					"js/sports_detail3.js",
+					"img/sport_detail_01.jpg",
+					"html/health_index.html",
+					"html/health_index_01.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"js/Chart.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/happy_index.html": {
+				"resources": [
+					"img/happy_index_07.jpg",
+					"img/happy_index_04.jpg",
+					"img/happy_index_02.jpg",
+					"img/happy_index_05.jpg",
+					"img/happy_index_03.jpg",
+					"img/safe_index_01.jpg",
+					"img/happy_index_06.jpg",
+					"img/happy_index_01.jpg",
+					"img/happy_index_09.jpg",
+					"img/happy_index_08.jpg",
+					"css/happy_index.css",
+					"index.html",
+					"html/happy_detail.html",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"img/index_14.jpg",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/setting.html": {
+				"resources": [
+					"img/setting_04.jpg",
+					"img/setting_05.jpg",
+					"index.html",
+					"img/setting_07.jpg",
+					"img/setting_01.jpg",
+					"img/setting_06.jpg",
+					"img/setting_03.jpg",
+					"img/setting_08.jpg",
+					"img/setting_02.jpg",
+					"html/chang_password_student.html",
+					"html/mailbox_01.html",
+					"html/Remote_login.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"html/opinion.html",
+					"html/Picture_quality.html",
+					"html/Font_size.html",
+					"html/language.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js",
+					"html/about.html"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"html/purse.html": {
+				"resources": [
+					"css/purse.css",
+					"html/pay.html",
+					"index.html",
+					"js/mui.min.js",
+					"img/login_01.jpg",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_05.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/pay.html": {
+				"resources": [
+					"img/pay_01.jpg",
+					"img/pay_02.jpg",
+					"css/pay.css",
+					"html/purse.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/sports_detail2.html": {
+				"resources": [
+					"img/share_02.png",
+					"img/share_04.png",
+					"css/sport_deail.css",
+					"img/share_01.png",
+					"img/sport_detail_01.jpg",
+					"img/share_03.png",
+					"html/health_index.html",
+					"img/index_15.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"html/photo.html": {
+				"resources": [
+					"img/photo_06.jpg",
+					"img/photo_03.jpg",
+					"img/photo_02.jpg",
+					"img/photo_01.jpg",
+					"css/photo.css",
+					"img/photo_04.jpg",
+					"img/photo_05.jpg",
+					"index.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/photo.js",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/myinformation.html": {
+				"resources": [
+					"img/myinformation_03.png",
+					"index.html",
+					"img/myinformation_04.jpg",
+					"css/myinfomation.css",
+					"img/myinformation_02.jpg",
+					"img/myinformation_01.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"html/historical_data.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"html/school_style.html",
+					"js/myinformationJS.js",
+					"html/opinion_01.html",
+					"html/opinion_02.html",
+					"html/opinion_03.html",
+					"html/school_style.html",
+					"js/myinformationJS.js",
+					"html/opinion_02.html",
+					"html/opinion_03.html",
+					"html/opinion_01.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/chang_password_student.html": {
+				"resources": [
+					"img/change_password_01.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"html/setting.html",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"html/Remote_login.html"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"html/historical_data.html": {
+				"resources": [
+					"img/historical_data_03.jpg",
+					"img/historical_data_02.jpg",
+					"html/myinformation.html",
+					"css/historical_data.css",
+					"img/historical_data_01.jpg",
+					"js/common/config.js",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/mailbox_02.html": {
+				"resources": [
+					"html/mailbox_01.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"html/Remote_login.html": {
+				"resources": [
+					"html/setting.html",
+					"html/chang_password_student.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/mailbox_01.html": {
+				"resources": [
+					"html/setting.html",
+					"html/mailbox_02.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/info.html": {
+				"resources": [
+					"img/info_03.jpg",
+					"img/info_02.jpg",
+					"css/info.css",
+					"img/info_04.jpg",
+					"img/info_01.jpg",
+					"index.html",
+					"html/info_list.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/info_list.html": {
+				"resources": [
+					"html/info.html",
+					"html/info_detail.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"css/info.css",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/opinion.html": {
+				"resources": [
+					"html/setting.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/info_detail.html": {
+				"resources": [
+					"html/info_list.html",
+					"js/mui.min.js",
+					"css/info.css",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/happy_detail.html": {
+				"resources": [
+					"img/happy_index_10.jpg",
+					"img/share_02.png",
+					"html/happy_index.html",
+					"img/share_04.png",
+					"css/happy_detail.css",
+					"img/share_01.png",
+					"img/share_03.png",
+					"img/happy_index_02.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/school_style.html": {
+				"resources": [
+					"html/myinformation.html",
+					"img/school_style_01.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"html/school_index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/Picture_quality.html": {
+				"resources": [
+					"html/setting.html",
+					"img/checked.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/safe_detail.html": {
+				"resources": [
+					"html/safe_index.html",
+					"img/safe_detail_01.jpg",
+					"img/share_02.png",
+					"img/share_04.png",
+					"css/safe_detail.css",
+					"img/share_01.png",
+					"img/share_03.png",
+					"html/safe_index_01.html",
+					"css/style.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_10.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"html/Font_size.html": {
+				"resources": [
+					"html/setting.html",
+					"img/checked.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/language.html": {
+				"resources": [
+					"html/setting.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/safe_index_01.html": {
+				"resources": [
+					"index.html",
+					"img/index_10.jpg",
+					"img/safe_index_01.jpg",
+					"css/safe_index_01.css",
+					"img/safe_index_02.jpg",
+					"js/safe_index.js",
+					"html/safe_detail.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"js/safe_index1.js"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"html/health_index_01.html": {
+				"resources": [
+					"index.html",
+					"img/health_index_02.jpg",
+					"css/health_index_01.css",
+					"img/safe_index_01.jpg",
+					"img/health_index_01.jpg",
+					"js/health_index.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"css/style.css",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/EveryExercise.js",
+					"js/common/jquery-1.8.0.min.js",
+					"html/sports_detail3.html",
+					"html/sports_detail.html",
+					"html/sports_detail_ywqz.html",
+					"html/sports_detail_ts.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/health_index_02.html": {
+				"resources": [
+					"js/health_index1.js",
+					"css/health_index_01.css",
+					"img/safe_index_01.jpg",
+					"index.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"html/sports_detail2.html"
+				],
+				"priority": 0
+			},
+			"html/happy_index_01.html": {
+				"resources": [
+					"img/happy_index_02.jpg",
+					"css/happy_index_01.css",
+					"img/safe_index_01.jpg",
+					"img/happy_index_01.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"css/style.css",
+					"js/happy_index_01.js",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"html/happy_detail.html"
+				],
+				"priority": 0
+			},
+			"html/questionnaire_index.html": {
+				"resources": [
+					"img/questionnaire_01.png",
+					"img/questionnaire_03.png",
+					"img/sport_detail_01.jpg",
+					"css/questionnaire_index.css",
+					"img/questionnaire_02.png",
+					"html/questionnaire_start.html",
+					"index.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/questionnaire_index.js",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js",
+					"html/health_index_03.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/questionnaire_start.html": {
+				"resources": [
+					"css/questionnaire_start.css",
+					"html/questionnaire_index.html",
+					"html/questionnaire_content.html",
+					"img/sport_detail_01.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/questionnaire_result.html": {
+				"resources": [
+					"img/share_02.png",
+					"img/share_04.png",
+					"css/sport_deail.css",
+					"img/share_01.png",
+					"html/questionnaire_content.html",
+					"img/share_03.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"img/sport_detail_01.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/questionnaire_content.html": {
+				"resources": [
+					"html/questionnaire_start.html",
+					"html/questionnaire_result.html",
+					"css/questionnaire_content.css",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"img/sport_detail_01.jpg",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/safe_index_02.html": {
+				"resources": [
+					"img/safe_index_01.jpg",
+					"css/safe_index_01.css",
+					"img/safe_index_04.jpg",
+					"img/safe_index_03.jpg",
+					"js/safe_index.js",
+					"index.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/safe_index_06.jpg",
+					"img/safe_index_05.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"js/common/config.js",
+					"js/common/app.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/health_index_04.html": {
+				"resources": [
+					"img/health_index_08.jpg",
+					"fonts/mui.ttf",
+					"img/health_index_13.jpg",
+					"css/style.css",
+					"img/index_14.jpg",
+					"img/safe_index_01.jpg",
+					"img/health_index_11.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"img/health_index_10.jpg",
+					"index.html",
+					"js/common/config.js",
+					"img/health_index_12.jpg",
+					"img/health_index_09.jpg",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"css/health_index_04.css",
+					"css/mui.min.css",
+					"img/index_15.jpg",
+					"html/health_index_message.html",
+					"html/health_index_message2.html",
+					"img/index_15_01.jpg"
+				],
+				"refer": [
+					"html/health_index_message3.html"
+				],
+				"priority": 0
+			},
+			"html/Bookmark_card_index.html": {
+				"resources": [
+					"img/Bookmark_card_list_03.jpg",
+					"img/newbook_05.jpg",
+					"js/Bookmark_card_index.js",
+					"img/safe_index_01.jpg",
+					"css/Bookmark_card_index.css",
+					"img/newbook_04.jpg",
+					"fonts/mui.ttf",
+					"css/style.css",
+					"img/index_14.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"index.html",
+					"js/common/config.js",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"css/mui.min.css",
+					"js/bookyshIndex.js"
+				],
+				"refer": [
+					"html/book_content.html"
+				],
+				"priority": 0
+			},
+			"html/health_index_message.html": {
+				"resources": [
+					"img/health_index_message_01.jpg",
+					"img/questionnaire_03.png",
+					"html/health_index_04.html",
+					"img/sport_detail_01.jpg",
+					"js/health_index_messsage.js",
+					"css/health_index_message.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/school_choose_index.html": {
+				"resources": [
+					"css/school_choose_index.css",
+					"img/photo_02.jpg",
+					"index.html",
+					"html/school_index.html",
+					"js/common/config.js",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"html/school_choose_content.html",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/school_index.html": {
+				"resources": [
+					"img/myinformation_03.png",
+					"img/myinformation_04.jpg",
+					"css/school_index.css",
+					"img/myinformation_02.jpg",
+					"html/school_style.html",
+					"js/common/config.js",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"index.html",
+					"html/school_choose_index.html",
+					"html/school_index1.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/school_choose_content.html": {
+				"resources": [
+					"img/school_choose_content_01.jpg",
+					"css/school_choose_content.css",
+					"html/school_choose_index.html",
+					"img/photo_02.jpg",
+					"js/common/config.js",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/health_index_03.html": {
+				"resources": [
+					"img/health_index_06.jpg",
+					"index.html",
+					"img/health_index_04.jpg",
+					"css/health_index_01.css",
+					"img/health_index_03.jpg",
+					"img/health_index_07.jpg",
+					"img/safe_index_01.jpg",
+					"js/health_index.js",
+					"img/health_index_05.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"css/style.css",
+					"html/questionnaire_index.html",
+					"js/common/jquery-1.8.0.min.js",
+					"js/common/config.js",
+					"js/common/app.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/Bookmark_card_list.html": {
+				"resources": [
+					"css/Bookmark_card_list.css",
+					"fonts/mui.ttf",
+					"img/index_14.jpg",
+					"css/style.css",
+					"img/bookmark_card_list_02.jpg",
+					"img/safe_index_01.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"js/common/config.js",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"img/bookmark_card_list_01.jpg",
+					"img/Bookmark_card_index_01.jpg",
+					"css/mui.min.css",
+					"js/Bookmark_card_index.js"
+				],
+				"refer": [
+					"html/Bookmark_card_index.html"
+				],
+				"priority": 0
+			},
+			"html/book_content.html": {
+				"resources": [
+					"css/book_content.css",
+					"img/happy_index_10.jpg",
+					"img/newbook_05.jpg",
+					"img/book_content_01.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/sports_detail_ywqz.html": {
+				"resources": [
+					"html/health_index_01.html",
+					"js/sports_detail_ywqz.js",
+					"js/Chart.js",
+					"img/sport_detail_01.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/sports_detail_ts.html": {
+				"resources": [
+					"js/sports_detail_ts.js",
+					"html/health_index_01.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"js/Chart.js",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"img/sport_detail_01.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/health_index_message2.html": {
+				"resources": [
+					"css/health_index_message2.css",
+					"img/health_index_message2_01.jpg",
+					"img/sport_detail_01.jpg",
+					"img/health_index_message2_02.jpg",
+					"html/health_index_04.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js",
+					"js/common/config.js",
+					"js/common/app.js"
+				],
+				"refer": [
+					"html/health_index_message_info.html"
+				],
+				"priority": 0
+			},
+			"html/health_index_message_info.html": {
+				"resources": [
+					"img/share_02.png",
+					"img/share_04.png",
+					"css/sport_deail.css",
+					"img/share_01.png",
+					"img/share_03.png",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"img/sport_detail_01.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"img/like1.png",
+					"img/like2.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/about.html": {
+				"resources": [
+					"img/happy_index_10.jpg",
+					"css/happy_detail.css",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"html/setting.html",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/happy_index_03.html": {
+				"resources": [
+					"js/common/config.js",
+					"css/happy_index_01.css",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"js/happy_index_03.js",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"css/style.css",
+					"img/safe_index_01.jpg",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"html/happy_detail.html"
+				],
+				"priority": 0
+			},
+			"html/happy_index_04.html": {
+				"resources": [
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"css/style.css",
+					"img/safe_index_01.jpg",
+					"js/happy_index_04.js",
+					"js/common/jquery-1.8.0.min.js",
+					"css/happy_index_04.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/sports_detail_03.html": {
+				"resources": [
+					"img/share_02.png",
+					"img/share_04.png",
+					"css/sport_deail.css",
+					"img/share_01.png",
+					"img/sport_detail_04.jpg",
+					"img/share_03.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/photo_list.html": {
+				"resources": [
+					"js/common/config.js",
+					"img/happy_index_10.jpg",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/photo_list.js",
+					"css/style.css",
+					"img/register_01.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"img/photo_01.jpg",
+					"css/photo_list.css"
+				],
+				"refer": [
+					"html/picture_list_bj.html",
+					"html/picture_list_gr.html",
+					"html/picture_list_ryb.html"
+				],
+				"priority": 0
+			},
+			"html/photo_detail.html": {
+				"resources": [
+					"js/mui.zoom.js",
+					"js/photo_detail.js",
+					"js/mui.previewimage.js",
+					"img/photo_03.jpg",
+					"css/photo_detail.css",
+					"html/photo_list.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/picture_list.html": {
+				"resources": [
+					"css/picture_list.css",
+					"js/picture_list.js",
+					"img/picture_list_02.jpg",
+					"img/picture_list_01.jpg",
+					"html/photo_list.html",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/picture_list_bj.html": {
+				"resources": [
+					"css/picture_list.css",
+					"img/picture_list_02.jpg",
+					"img/picture_list_01.jpg",
+					"js/picture_list_bj.js",
+					"fonts/mui.ttf",
+					"img/register_01.jpg",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js",
+					"img/photo_01.jpg",
+					"js/common/config.js",
+					"img/happy_index_10.jpg",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"html/photo_detail_bj.html"
+				],
+				"priority": 0
+			},
+			"html/picture_list_gr.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"img/register_01.jpg",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js",
+					"img/photo_01.jpg",
+					"js/picture_list_bj.js",
+					"img/picture_list_01.jpg",
+					"css/picture_list.css",
+					"js/common/config.js",
+					"img/picture_list_02.jpg",
+					"img/happy_index_10.jpg",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"css/mui.min.css",
+					"img/photo_02.jpg",
+					"js/picture_list_gr.js"
+				],
+				"refer": [
+					"html/photo_detail_gr.html"
+				],
+				"priority": 0
+			},
+			"html/picture_list_ryb.html": {
+				"resources": [
+					"img/register_01.jpg",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js",
+					"img/photo_01.jpg",
+					"js/picture_list_bj.js",
+					"img/picture_list_01.jpg",
+					"css/picture_list.css",
+					"js/common/config.js",
+					"img/picture_list_02.jpg",
+					"img/happy_index_10.jpg",
+					"js/mui.min.js",
+					"js/common/app.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/picture_list_ryb.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/photo_detail_bj.html": {
+				"resources": [
+					"js/mui.zoom.js",
+					"js/mui.previewimage.js",
+					"js/photo_detail_bj.js",
+					"css/photo_detail.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/photo_detail_gr.html": {
+				"resources": [
+					"js/mui.zoom.js",
+					"js/photo_detail_gr.js",
+					"js/mui.previewimage.js",
+					"css/photo_detail.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/photo_detail_ryb.html": {
+				"resources": [
+					"js/photo_detail_ryb.js",
+					"js/mui.zoom.js",
+					"js/mui.previewimage.js",
+					"css/photo_detail.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/register_07.html": {
+				"resources": [
+					"html/register_01.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"html/register_08.html": {
+				"resources": [
+					"html/register_01.html",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/style.css",
+					"js/common/jquery-1.8.0.min.js",
+					"fonts/mui.ttf"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"html/opinion_01.html": {
+				"resources": [
+					"css/sport_deail.css",
+					"css/style.css",
+					"img/sport_detail_01.jpg",
+					"img/health_index_message2_02.jpg",
+					"html/myinformation.html",
+					"js/sports_detail3.js",
+					"js/Chart.js",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js",
+					"js/xssl.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/opinion_02.html": {
+				"resources": [
+					"css/sport_deail.css",
+					"img/opinion_01.jpg",
+					"img/sport_detail_01.jpg",
+					"html/myinformation.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/opinion_03.html": {
+				"resources": [
+					"img/opinion_02.jpg",
+					"html/myinformation.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"start.html": {
+				"resources": [
+					"img/start_01.jpg",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"img/jr/2016-05-17.jpg",
+					"js/common/config.js",
+					"js/common/jquery-1.8.0.min.js",
+					"img/jr/logo-02.png",
+					"img/jr/logo.jpg",
+					"img/jr/2016-05-18.jpg",
+					"img/jr/2016-06-21.jpg",
+					"img/jr/2016-06-24.jpg",
+					"img/jr/2016-06-27.jpg"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"html/school_index1.html": {
+				"resources": [
+					"html/school_index.html"
+				],
+				"refer": [
+					"html/school_index2.html"
+				],
+				"priority": 0
+			},
+			"html/school_index3.html": {
+				"resources": [
+					"js/common/config.js",
+					"js/mui.zoom.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/mui.previewimage.js",
+					"img/head_02.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"css/photo_detail.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/school_index2.html": {
+				"resources": [
+					"js/studetnzy.js",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"html/school_index3.html"
+				],
+				"priority": 0
+			},
+			"html/health_index_message3.html": {
+				"resources": [
+					"img/health_index_message3_03.jpg",
+					"img/health_index_message3_01.jpg",
+					"img/health_index_message3_02.jpg",
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"html/health_index_message_info.html"
+				],
+				"priority": 0
+			},
+			"html/safe_index_0101.html": {
+				"resources": [
+					"js/common/config.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"img/safe_index_01.jpg",
+					"css/safe_index_01.css",
+					"js/common/jquery-1.8.0.min.js",
+					"js/safe_index101.js"
+				],
+				"refer": [
+					"html/safe_detail.html"
+				],
+				"priority": 0
+			},
+			"html/safe_index_0102.html": {
+				"resources": [
+					"js/common/config.js",
+					"js/safe_index102.js",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/index_14.jpg",
+					"img/safe_index_01.jpg",
+					"css/safe_index_01.css",
+					"js/common/jquery-1.8.0.min.js"
+				],
+				"refer": [
+					"html/safe_detail.html"
+				],
+				"priority": 0
+			},
+			"html/emergency_treatment.html": {
+				"resources": [
+					"img/emergency_treatment_06.jpg",
+					"img/emergency_treatment_12.jpg",
+					"img/emergency_treatment_03.jpg",
+					"js/common/jquery-1.8.0.min.js",
+					"img/emergency_treatment_08.jpg",
+					"img/emergency_treatment_15.jpg",
+					"img/emergency_treatment_02.jpg",
+					"js/common/config.js",
+					"img/emergency_treatment_28.jpg",
+					"js/common/app.js",
+					"js/mui.min.js",
+					"img/emergency_treatment_19.jpg",
+					"img/emergency_treatment_23.jpg",
+					"img/emergency_treatment_17.jpg",
+					"img/emergency_treatment_11.jpg",
+					"img/emergency_treatment_05.jpg",
+					"fonts/mui.ttf",
+					"img/emergency_treatment_07.jpg",
+					"img/emergency_treatment_13.jpg",
+					"img/emergency_treatment_20.jpg",
+					"img/emergency_treatment_24.jpg",
+					"img/emergency_treatment_16.jpg",
+					"img/emergency_treatment_22.jpg",
+					"img/emergency_treatment_10.jpg",
+					"img/emergency_treatment_14.jpg",
+					"img/emergency_treatment_09.jpg",
+					"img/emergency_treatment_01.jpg",
+					"css/mui.min.css",
+					"img/emergency_treatment_04.jpg",
+					"img/emergency_treatment_21.jpg",
+					"img/emergency_treatment_18.jpg"
+				],
+				"refer": [
+					"html/safe_index_0102.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": []
+		}
+	}
+}

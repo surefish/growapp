@@ -1,0 +1,82 @@
+.headbk
+{
+	background-color: white;
+}
+.headlink
+{
+	color: #919191;
+}
+.content
+{
+	margin-top: 100px;
+	width: 100%;
+	background-color: white;
+}
+.body
+{
+	width:50%;
+	margin-left: 25%;
+	text-align: center;
+}
+.body img
+{
+	width: 60%;
+	border-radius: 30%;
+}
+.vip
+{
+	position: relative;
+	margin-top: -20px;
+	width: 100%;
+	text-align: center;
+}
+.vip img
+{
+	width: 25%;
+}
+.user
+{
+	width: 100%;
+	text-align: center;
+	color:#f7de36;
+	font-size: 20px;
+	font-weight: bold;
+	margin:5% 0px;
+}
+.identity
+{
+	width: 100%;
+	text-align: center;
+	color:#adadad;
+}
+.validity
+{
+	width: 100%;
+	text-align: center;
+	color:#919191;
+	margin:5% 0px;
+}
+.space
+{
+	width: 100%;
+	text-align: center;
+	color:#919191;
+}
+.btn
+{
+	width: 100%;
+	text-align: center;
+	margin:5% 0px;
+}
+button
+{
+	width: 80%;	
+	border:solid 1px #f7de36;
+	background-color: #f7de36;
+	border-radius: 30px;
+	color: white;
+}
+.blank
+{
+	height: 10px;
+}

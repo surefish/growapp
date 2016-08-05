@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/school_choose_content.css">
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title headlink">选课</h1>
+		</header>
+		<div class="content">
+			<div class="item">
+				<div class="photo">
+					<img id="im2" />
+				</div>
+				<div class="name" id="fname"></div>
+				<div class="teacher" id="fteacher"></div>
+				<div class="type" id="ftype"></div>
+				<div class="time" id="ftime"></div>
+				<div class="tip" id="ftim"></div>
+			</div>
+			<div class="foot">
+				<div class="text">已报名<span id="ybm"></span></div>
+				<div class="text">剩余<span id="syu"></span></div>
+				<button onclick="gochoose();">报名</button>
+			</div>
+		</div>
+		<div id="light" class="white_content">
+			<a href="#" onClick="closeWindow()">
+				<span class="mui-icon mui-icon-closeempty right"></span>
+			</a>
+			<img src="../img/school_choose_content_01.jpg">
+			<span class="info"> 选课成功</span>
+		</div>
+		<div id="fade" class="black_overlay"></div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script language="javascript">
+		var s2 = "";
+		mui.plusReady(function() {
+			mui.init();
+			s2 = plus.storage.getItem("choosfuid"); //课程主键
+			myindex();
+		});
+		function myindex() {
+			mui.ajax(ip + "newbegin/index/showCourseinfo", {
+				data: {
+					fuid: s2
+				},
+				dataType: 'json', //服务器返回json格式数据
+				type: 'get', //HTTP请求类型
+				success: function(json) {
+					if(null != json['student']) {
+						var ip1 = ip + json['student'].fimage;
+						$("#fname").empty();
+						$("#fteacher").empty();
+						$("#ftype").empty();
+						$("#ftime").empty();
+						$("#ftim").empty();
+						$("#im2").attr("src", ip1);
+						$("#fname").append(json['student'].fname); //标题
+						$("#fteacher").append('授课教师：' + json['student'].fteacher);
+						$("#ftype").append('课程类别:' + json['student'].ftype);
+						$("#ftime").append('课程课时:' + json['student'].ftime);
+						$("#ftim").append('课程简介：' + json['student'].fintro);
+						$("#ybm").empty();
+						$("#syu").empty();
+						var a = json['student'].famountstudent;
+						var b = json['student'].famount;
+						$("#ybm").append(json['student'].famountstudent); //已报名
+						$("#syu").append(parseInt(b) - parseInt(a)); //剩余
+					}
+
+				}
+			});
+		}
+		//去报名
+		function gochoose() {
+			w = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+			mui.ajax(ip + "newbegin/index/apply", {
+				data: {
+					fuid: s2
+				},
+				dataType: 'text', //服务器返回json格式数据
+				type: 'get', //HTTP请求类型
+				timeout: 20000, //超时时间设置为10秒；
+				success: function(json) {
+					w.close();
+					if('bmrm' == json) {
+						alert("您好，报名人已满！")
+						return;
+					}
+					if('ybr' == json) {
+						alert("您好，你已报名改课程！")
+						return;
+					}
+					if('dlcs' == json) {
+						alert("您好，登录超时，请重新登录！")
+						return;
+					}
+					if('success' == json) {
+						myindex();
+						openWindow();
+						return;
+					}
+				},
+				error: function(xhr, type, errorThrown) {
+					//异常处理； 
+					w.close();
+					if(type == 'timeout') {
+						plus.nativeUI.toast("无法连接服务器，请检查网络！", {
+							duration: "long"
+						});
+					} else {
+						plus.nativeUI.toast("登录失败，请联系管理员！", {
+							duration: "long"
+						});
+					}
+				}
+
+			});
+
+		}
+		function openWindow() {
+			document.getElementById('light').style.display = 'block';
+			document.getElementById('fade').style.display = 'block';
+		}
+		function closeWindow() {
+			document.getElementById('light').style.display = 'none';
+			document.getElementById('fade').style.display = 'none';
+		}
+	</script>
+</html>

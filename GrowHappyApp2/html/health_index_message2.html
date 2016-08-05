@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/health_index_message2.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<body>
+		<div class="title">眼科</div>
+		<div class="Split"></div>
+		<div class="menu">
+			<div class="menu_left" onclick="showmenu()"><span id="title1">眼球的结构</span><img src="../img/health_index_message2_01.jpg" class="imgtrans"> </div>
+			<div class="menu_right" onclick="showmenu2()"><span id="title2">推送时间</span><img src="../img/health_index_message2_01.jpg" class="imgtrans"></div>
+		</div>
+		<div class="content" id="pullrefresh">
+			
+			
+			<!--
+            	作者：419179186@qq.com
+            	时间：2016-04-09
+            	描述：
+           
+			<div class="time">星期日 13:24</div>
+			<div class="content2">			
+				<div class="img">
+					<img src="../img/health_index_message2_02.jpg">
+				</div>
+				<div class="biaoti">
+					眼球的结构
+				</div>
+				<div class="text">
+					眼球壁：3层外层：纤维膜 角膜——黑 巩膜-白 中层：葡萄膜 内层:视网膜  眼内容物所有妮妮 眼内容物所有妮妮 眼内容物所有妮妮
+				</div>
+				<div class="split2"></div>
+				<span class="ydqw">阅读全文</span>
+			<
+			 -->
+			
+			</div>
+			
+			<div class="bk">
+			</div>
+			<div class="footbk">
+				<img src="../img/sport_detail_01.jpg">
+			</div>
+			<div class="foot">
+				<span class="iconbk">		
+			<a onclick="goback(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+			</div>
+			<div id="loadingDiv" style="position:absolute;display:none;z-index:2000;top:0px;left:0px;width:100%;height:100%;background-color:rgba(159,159,159,0.5)"></div>
+			<div id="popup">
+				<ul id="yk">
+					<li>眼球的结构</li>
+					<li>近视的类型及原因</li>
+					<li>近视的早期征兆</li>
+					<li>近视的预防</li>
+					<li>近视的治疗</li>
+				</ul>
+			</div>
+			<div id="loadingDiv2" style="position:absolute;display:none;z-index:2000;top:0px;left:0px;width:100%;height:100%;background-color:rgba(159,159,159,0.5)"></div>
+			<div id="popup2">
+				<ul>
+					<li>一个星期前</li>
+					<li>一个月前</li>
+					<li>半年前</li>
+
+				</ul>
+			</div>
+	</body>
+	<script>
+	
+
+mui.plusReady(function() {
+	mui.init();
+	getEyes();
+	});
+var w;
+var mytype="all";
+var mytime="all";
+
+function getEyes(){
+w = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+mui.ajax(ip + "newbegin/index/eyes", {
+			data: {
+				catalog:mytype,
+				mytime:mytime,
+			},
+			dataType: 'json', //服务器返回json格式数据
+			type: 'get', //HTTP请求类型
+			success: function(json) {
+				//获得服务器响应
+				w.close();
+					$("#pullrefresh").empty();
+				if (json['student']!= null) {
+					var stList = json['student'];
+			        var ht = '';  
+				for (var a = 0; a < stList.length; a++){
+			         var ip1=ip+stList[a].fimagesurl;
+			         var fuid1="'"+stList[a].fuID+"'";
+			        ht+='<div class="time">'+stList[a].fcreatetime+'</div>';
+					ht+='<div class="content2"><div class="img"><img src="'+ip1+'"></div>'
+			        ht+='<a href="javascript:goNextPage('+fuid1+');"><div class="biaoti">'+stList[a].ftitle+'</div>'
+				    ht+='<div class="text">'+stList[a].ftag+'</div><div class="split2"></div>'
+					ht+='<span class="ydqw">阅读全文</span></a></div>';
+
+					  }
+					 $("#pullrefresh").append(ht);
+				}
+			}
+		});
+		
+		
+		
+	}
+	//查看眼科文章详情	
+function goNextPage(i){
+	 var id=plus.webview.currentWebview().id;
+	 plus.storage.setItem("mydqckID", id.toString());
+	 plus.storage.setItem("mymessFUID", i.toString());
+	 
+	showFact('health_index_message_info.html', '首页', '', 'health_index_message_info','');
+}
+	
+	
+	
+	
+	
+	function goback(){
+	    var wobj = plus.webview.getWebviewById("health_index_04");
+        wobj.reload(true);
+		mui.back();
+	}
+		var menu1 = 1,
+			menu2 = 1;
+		document.getElementById("popup").onclick = function(e) {
+			e = e || window.event;
+			
+			var target = e.srcElement || e.target,
+				tagName = target.tagName.toLowerCase(),
+				allLi = document.getElementById("popup").getElementsByTagName("li");
+				
+				
+			for (var i = 0, len = allLi.length; i < len; i++) {
+				
+				if (target == allLi[i]) {
+					allLi[i].style.background = "#86d949";
+					mytype=allLi[i].textContent;
+					getEyes();
+					allLi[i].style.color = "white";
+					$('.menu_left img').addClass("imgtrans");
+					$('#popup').slideUp();
+					$('#loadingDiv').css('display', 'none');
+					$('#title1').text(target.innerHTML);
+					$('#title1').addClass('color');
+					menu1 = 0;
+				} else {
+					allLi[i].style.background = "white";
+					allLi[i].style.color = "#969696";
+				}
+			}
+		};
+		document.getElementById("popup2").onclick = function(e) {
+			e = e || window.event;
+			var target = e.srcElement || e.target,
+				tagName = target.tagName.toLowerCase(),
+				allLi = document.getElementById("popup2").getElementsByTagName("li");
+			for (var i = 0, len = allLi.length; i < len; i++) {
+				if (target == allLi[i]) {
+					mytime=allLi[i].textContent;
+					getEyes();
+					allLi[i].style.background = "#86d949";
+					allLi[i].style.color = "white";
+					$('.menu_right img').addClass("imgtrans");
+					$('#popup2').slideUp();
+					$('#loadingDiv2').css('display', 'none');
+					$('#title2').text(target.innerHTML);
+					$('#title2').addClass('color');
+					menu2 = 0;
+				} else {
+					allLi[i].style.background = "white";
+					allLi[i].style.color = "#969696";
+				}
+			}
+		};
+
+		function showmenu() {
+			//alert($("#yk").text())
+			if (menu1 == 0) {
+				$('#popup').slideDown();
+				$('.menu_left img').removeClass("imgtrans");
+				menu1 = 1;
+			} else {
+				$('#popup').slideUp();
+				$('#loadingDiv').css('display', 'none');
+				$('.menu_left img').addClass("imgtrans");
+				menu1 = 0;
+			}
+		}
+		
+		var obj = document.getElementById('pullrefresh');
+		obj.addEventListener('touchmove', function(event) {
+			// 如果这个元素的位置内只有一个手指的话
+			if (event.targetTouches.length == 1) {　　　　
+				//						event.preventDefault(); // 阻止浏览器默认事件，重要 
+			
+				$('#popup').slideUp();
+				$('#loadingDiv').css('display', 'none');
+				$('#popup2').slideUp();
+				$('#loadingDiv2').css('display', 'none');
+				$('.menu_right img').addClass("imgtrans");
+				$('.menu_left img').addClass("imgtrans");
+				menu2 = 0;
+				menu1 = 0;
+			}
+		}, false);
+
+		function closemenu() {
+			$('#popup').slideUp();
+			$('#loadingDiv').css('display', 'none');
+			$('#popup2').slideUp();
+			$('#loadingDiv2').css('display', 'none');
+		}
+
+		function showmenu2() {
+			if (menu2 == 0) {
+				$('#popup2').slideDown();
+				$('.menu_right img').removeClass("imgtrans");
+				menu2 = 1;
+			} else {
+				$('#popup2').slideUp();
+				$('#loadingDiv2').css('display', 'none');
+				$('.menu_right img').addClass("imgtrans");
+				menu2 = 0;
+			}
+		}
+	</script>
+
+</html>

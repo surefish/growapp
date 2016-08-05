@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/photo_list.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/photo_list.js"></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+
+	<body>
+		<div class="title">相册列表
+		<!-- <span class="titleright" onclick="openWindow3()">新建相册</span>-->
+			<span class="titleright" onclick=""></span>
+			
+		</div>
+		<div class="content">
+			<div class="roll">
+				<div class="item">
+					<a style="color:#FFFFFF" href="javascript:gobjlb();"> 
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">班级相册</div>
+					</div></a>
+				    <a style="color:#FFFFFF" href="javascript:gogrlb();"> 
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">个人相册</div>
+					</div></a>
+					<a style="color:#FFFFFF" href="javascript:goryblb();"> 
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">荣誉榜</div>
+					</div></a>
+				</div>
+				<!--
+					
+                
+				<div class="item">
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">相册名称</div>
+						<div class="source">来自孩子</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+					</div>
+				</div>
+				<div class="item">
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+						<div class="name">相册名称</div>
+						<div class="source">来自孩子</div>
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+					</div>
+					<div class="photo">
+						<img src="../img/photo_01.jpg">
+					</div>
+				</div>-->
+			</div>
+			<!--
+            	作者：419179186@qq.com
+            	时间：2016-04-27
+            	描述：
+            	<div class="page">
+				<span class="up">上一页</span>
+				<span class="down">下一页</span>
+			</div>
+            -->
+			
+		</div>
+		<div class="bk">
+		</div>
+		<div class="footbk">
+			<img src="../img/happy_index_10.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a href="javascript:goback();">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+
+		<div id="light" class="white_content">
+			<a href="#" onClick="closeWindow()">
+				<span class="mui-icon mui-icon-closeempty right"></span>
+			</a>
+			<div class="photo_title">输入访问相册密码</div>
+			<div class="photo_input">
+				<input type="text" placeholder="输入密码">
+			</div>
+			<div class="photo_btn">
+				<button onclick="openWindow2()">确认</button>
+			</div>
+		</div>
+		<div id="fade" class="black_overlay"></div>
+		<div id="light2" class="white_content2">
+			<a href="#" onClick="closeWindow2()">
+				<span class="mui-icon mui-icon-closeempty right"></span>
+			</a>
+			<img src="../img/register_01.jpg">
+			<div class="photo_text">密码错误</div>
+			<div class="photo_btn">
+				<button>再次输入</button>
+			</div>
+		</div>
+		<div id="fade2" class="black_overlay"></div>
+		<div id="light3" class="white_content3">
+			<a href="#" onClick="closeWindow3()">
+				<span class="mui-icon mui-icon-closeempty right"></span>
+			</a>
+			<div class="photo_text">新建相册</div>
+			<div class="photo_input">
+				<input type="text" placeholder="相册名称">
+			</div>
+			<li class="mui-table-view-cell">
+				<div class="photo_left">
+					<span class="mui-icon mui-icon-locked"></span> 访问相册密码
+				</div>
+				<div class="mui-switch mui-switch-mini mui-active ">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>
+			<div class="photo_input">
+				<input type="password" placeholder="输入密码">
+			</div>
+			<div class="photo_input">
+				<input type="password" placeholder="确认密码">
+			</div>
+			<div class="photo_btn">
+				<button>确认新建</button>
+			</div>
+		</div>
+		<div id="fade3" class="black_overlay"></div>
+	</body>
+<script>
+	function goback(){
+	    var id=plus.storage.getItem("myindex");
+	    var wobj = plus.webview.getWebviewById(id.toString());
+        wobj.reload(true);
+		mui.back();
+	}
+	
+	 //去班级相册列表
+	function gobjlb(){
+		//plus.storage.setItem("meuntype", "2");//健康
+		showFact('picture_list_bj.html', '首页', '',"pict_bj",'');
+		
+	}
+	//去个人相册列表
+	function gogrlb(){
+		//plus.storage.setItem("meuntype", "2");//健康
+		showFact('picture_list_gr.html', '首页', '',"pict_gr",'');
+		
+	}
+	//去荣誉榜相册列表
+	function goryblb(){
+		//plus.storage.setItem("meuntype", "2");//健康
+		showFact('picture_list_ryb.html', '首页', '',"pict_ryb",'');
+		
+	}
+	
+</script>
+</html>

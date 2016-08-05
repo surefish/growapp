@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<style type="text/css">
+			.top
+			{
+				margin-top:80px;
+			}
+			.item
+			{
+				width:100%;
+				background-color: white;
+				padding:15px;
+				border-bottom:solid 1px #efeff4;
+				color:#919191;
+				font-weight:700;
+			}
+			.right
+			{
+				float:right;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav" style="color:#919191;"></span>
+			</button>
+			<h1 class="mui-title" style="color:#919191;">今日作业</h1>
+		</header>
+		<div class="top">
+			<a href="javascript:goNextPage('402881ee54a9b7450154a9b876560001');">
+			<div class="item">语文
+			<span class="mui-icon mui-icon-forward right"></span>
+			</div>			
+			</a>			            	
+			<a href="javascript:goNextPage('402881ee54a9b7450154a9b8765c0002');">
+			<div class="item">数学
+			<span class="mui-icon mui-icon-forward right"></span>
+			</div>
+			</a>
+			<a href="javascript:goNextPage('402881ee54a9b7450154a9b876600003');">
+			<div class="item">英语
+			<span class="mui-icon mui-icon-forward right"></span>
+			</div>
+			</a>
+		</div>
+	</body>
+	
+	<script>
+		//去作业
+		
+function goNextPage(i){
+	
+	 var id=plus.webview.currentWebview().id;
+	 plus.storage.setItem("myzylb", id.toString());
+
+	//类型
+	plus.storage.setItem("myzltype",i);
+	showFact('school_index2.html', '首页', '', 'school_index2','');
+}
+		
+		
+		
+	</script>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/sport_deail.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+	<body>
+		<div class="title">问卷结论</div>
+		<div class="content">
+			<div class="text">
+				<span id="fname"></span>
+				<span class="lib" id="ftype"></span>
+			</div>
+			<div class="roll">			
+			
+			<div>
+				<span id="results"></span>
+			
+			
+			</div>
+			</div>
+			<div class="share">
+				分享到:
+				<img src="../img/share_01.png"> 
+				<img src="../img/share_02.png"> 
+				<img src="../img/share_03.png"> 
+				<img src="../img/share_04.png"> 
+			</div>
+		</div>
+		<div class="bk">		
+		</div>
+		<div class="footbk">
+			<img src="../img/sport_detail_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a onclick="goback(); ">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			<br/>
+			</span>
+		</div>
+	</body>
+     <script>
+    mui.plusReady(function(){
+	mui.init();
+	mui.ajax(ip + "newbegin/mqSurvey/modWJresults", {
+		data: {
+
+		},
+		dataType: 'json', //服务器返回json格式数据
+		type: 'get', //HTTP请求类型
+		success: function(json) {
+			//获得服务器响应
+			if (null != json['student']) {
+				$("#fname").html(json['student'].fsurveyname);
+				$("#ftype").html(json['student'].ftype);
+				$("#results").html(json['student'].fresults);
+			}
+
+		}
+	});
+
+
+});
+
+
+
+
+function goback() {
+	mui.back();
+}</script>
+</html>

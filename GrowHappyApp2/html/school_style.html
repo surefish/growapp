@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<style type="text/css">
+			body{
+				background-color: white;
+			}
+			.title
+			{
+				text-align: center;			
+			}
+			.photo
+			{
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			.photo img
+			{
+				width: 95%;
+				margin-left:2.5%;
+			}
+			.text
+			{
+				 text-indent: 2em;
+				 font-size: 12px;
+				 padding:5px 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background-color:white;">
+			<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav" style="color:#919191"></span>
+			</button>
+			<h1 class="mui-title" style="color:#919191">学校风采</h1>
+		</header>
+		<div style="height: 55px;"></div>
+		<div class="title" id="cd_my1"></div>		
+		<!--<div class="photo">
+				<img id="im2" src="">
+
+			</div>-->
+		<div class="text" id="cd_my2">
+			
+		</div>
+	</body>
+	<script>
+	  mui.plusReady(function () {
+            mui.init();         
+            getinfo();
+          
+        });
+		function getinfo() {
+        	//alert(ip+"newbegin/myinformation/studentinfo");
+            mui.ajax(ip + "newbegin/myinformation/schoolInfos", {
+                data: {
+                    schoolfuid:  plus.storage.getItem("schoolfuid")
+                },
+                dataType: 'json',//服务器返回json格式数据
+                type: 'get',//HTTP请求类型
+                success: function (json) {
+                    //获得服务器响应
+            if (json['student'] != null) {
+                  $("#cd_my1").append(json['student'].fname+"简介");
+              
+                 //$("#cd_my").append(s1);
+                 //alert(ip+json['student'].studenSchoolurl);
+//               $("#im2").attr("src",ip+json['student'].fschoolurl);
+                 $("#cd_my2").append(json['student'].fintro);
+                 //plus.storage.setItem("schoolfuid", json['student'].schoolfuid);
+            }
+
+                }
+            });
+        }
+		
+		
+		
+	</script>
+</html>

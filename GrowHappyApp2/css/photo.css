@@ -1,0 +1,82 @@
+.headbk {
+	background-color: white;
+}
+
+.headlink {
+	color: #919191;
+}
+body
+{
+	background-color: white;
+}
+.menu
+{
+	margin-top:60px;
+	width: 100%;
+	background-color: white;
+	overflow: auto;
+}
+.item
+{
+	float: left;
+	width: 30%;
+	padding: 5px 10px;
+	background-color: white;
+	border:solid 1px #FF8A01;
+	border-radius:30px ;
+	margin-right: 1%;
+	margin-left: 1%;
+	text-align: center;
+	color: #FF8A01;
+	margin-bottom: 10px;
+}
+.active
+{
+	color: white;
+	background-color: #FF8A01;
+}
+.content,.content2,.content3{
+	width: 100%;
+	background-color: white;
+	-webkit-column-gap: 3px;
+	column-gap: 3px;
+	column-count: 2;
+	-webkit-column-count: 2;
+	column-fill: balance;
+	-webkit-column-fill: 2;
+}
+.content2,.content3
+{
+	display: none;
+}
+.photo {
+	margin: 5%;
+	border-radius: 10px;
+	position: relative;
+}
+
+.photo img {
+	width: 100%;
+	height: 100%;
+	border: 5px solid #ff8a01;
+	display: block;
+	border-radius: 10px;
+}
+.delete 
+{
+	position: absolute;
+	top:40px;
+	left: 15px;
+	color: #FF8A01;
+	font-size: 30px;
+	display: inline-block;
+}
+.add
+{
+	position: absolute;
+	top:40px;
+	right: 15px;
+	color: #FF8A01;
+	font-size: 30px;
+	display: inline-block;
+}

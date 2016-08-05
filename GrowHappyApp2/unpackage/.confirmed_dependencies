@@ -1,0 +1,1679 @@
+{
+<<<<<<< .mine
+	"login.html": {
+		"resources": [
+			"js/mui.min.js",
+			"img/login_01.jpg",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"img/login_02.jpg",
+			"html/register_01.html",
+			"index.html",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/common/jquery-1.8.0.min.js",
+			"js/login_myjs.js"
+		],
+		"refer": [
+			"html/register_01.html",
+			"index.html"
+		]
+	},
+	"html/register_01.html": {
+		"resources": [
+			"html/register_02.html",
+			"login.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"html/register_05.html",
+			"html/register_07.html",
+			"html/register_08.html"
+		],
+		"refer": [
+			"html/register_02.html",
+			"login.html",
+			"html/register_05.html",
+			"html/register_07.html",
+			"html/register_08.html"
+		]
+	},
+	"html/register_02.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"html/register_01.html",
+			"html/register_03.html"
+		],
+		"refer": [
+			"html/register_01.html",
+			"html/register_03.html"
+		]
+	},
+	"html/register_03.html": {
+		"resources": [
+			"html/register_02.html",
+			"html/register_04.html",
+			"img/register_01.jpg"
+		],
+		"refer": [
+			"html/register_02.html",
+			"html/register_04.html"
+		]
+	},
+	"html/register_04.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"html/register_03.html"
+		],
+		"refer": [
+			"html/register_03.html"
+		]
+	},
+	"html/register_05.html": {
+		"resources": [
+			"html/register_06.html",
+			"html/register_01.html"
+		],
+		"refer": [
+			"html/register_06.html",
+			"html/register_01.html"
+		]
+	},
+	"html/register_06.html": {
+		"resources": [
+			"html/register_05.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css"
+		],
+		"refer": [
+			"html/register_05.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"img/index_03.jpg",
+			"img/index_07.jpg",
+			"img/index_01.jpg",
+			"fonts/mui.ttf",
+			"img/index_04.jpg",
+			"css/style.css",
+			"img/index_14.jpg",
+			"img/index_05.jpg",
+			"css/index.css",
+			"img/index_06.jpg",
+			"js/mui.min.js",
+			"img/login_01.jpg",
+			"img/index_08.jpg",
+			"css/mui.min.css",
+			"img/index_10.jpg",
+			"img/index_09.jpg",
+			"img/index_02.jpg",
+			"img/index_15.jpg",
+			"js/index.js",
+			"img/index_13.jpg",
+			"html/safe_index.html",
+			"img/index_21.jpg",
+			"img/index_19.jpg",
+			"img/index_12.jpg",
+			"img/index_11.jpg",
+			"img/index_17.jpg",
+			"img/index_20.jpg",
+			"img/index_24.jpg",
+			"img/index_22.jpg",
+			"img/index_18.jpg",
+			"img/index_26.jpg",
+			"img/index_23.jpg",
+			"img/index_16.jpg",
+			"img/index_25.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"html/setting.html",
+			"html/health_index.html",
+			"html/happy_index.html",
+			"html/purse.html",
+			"html/photo.html",
+			"img/index_32.jpg",
+			"img/index_27.jpg",
+			"img/index_29.jpg",
+			"img/index_31.jpg",
+			"img/index_30.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"img/login_03.jpg"
+		],
+		"refer": [
+			"html/setting.html",
+			"html/safe_index_01.html",
+			"html/health_index_01.html",
+			"html/health_index_02.html",
+			"html/questionnaire_index.html",
+			"html/Bookmark_card_list.html",
+			"html/happy_index_03.html",
+			"html/myinformation.html",
+			"html/photo_list.html",
+			"html/school_index.html",
+			"html/health_index_04.html",
+			"html/happy_index_04.html",
+			"html/emergency_treatment.html",
+			"html/info.html",
+			"html/safe_index_0101.html"
+		]
+	},
+	"html/safe_index.html": {
+		"resources": [
+			"css/safe_index.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_10.jpg",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"img/safe_index_04.jpg",
+			"img/safe_index_02.jpg",
+			"img/safe_index_03.jpg",
+			"js/safe_index.js",
+			"index.html"
+		],
+		"refer": []
+	},
+	"html/setting.html": {
+		"resources": [
+			"img/setting_04.jpg",
+			"img/setting_05.jpg",
+			"index.html",
+			"img/setting_07.jpg",
+			"img/setting_01.jpg",
+			"img/setting_06.jpg",
+			"img/setting_03.jpg",
+			"img/setting_08.jpg",
+			"img/setting_02.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js",
+			"html/mailbox_01.html",
+			"html/Remote_login.html",
+			"html/about.html",
+			"html/opinion.html"
+		],
+		"refer": [
+			"index.html",
+			"html/mailbox_01.html",
+			"html/Remote_login.html",
+			"html/about.html",
+			"html/opinion.html"
+		]
+	},
+	"html/health_index.html": {
+		"resources": [
+			"img/health_index_06.jpg",
+			"img/health_index_04.jpg",
+			"img/health_index_02.jpg",
+			"img/health_index_03.jpg",
+			"css/health_index.css",
+			"img/health_index_07.jpg",
+			"img/health_index_01.jpg",
+			"js/health_index.js",
+			"img/health_index_05.jpg",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/happy_index.html": {
+		"resources": [
+			"img/happy_index_07.jpg",
+			"img/happy_index_04.jpg",
+			"img/happy_index_02.jpg",
+			"img/happy_index_05.jpg",
+			"img/happy_index_03.jpg",
+			"img/happy_index_06.jpg",
+			"img/happy_index_01.jpg",
+			"img/happy_index_09.jpg",
+			"img/happy_index_08.jpg",
+			"css/happy_index.css",
+			"index.html"
+		],
+		"refer": []
+	},
+	"html/purse.html": {
+		"resources": [
+			"css/purse.css",
+			"html/pay.html",
+			"index.html"
+		],
+		"refer": [
+			"html/pay.html"
+		]
+	},
+	"html/pay.html": {
+		"resources": [
+			"img/pay_01.jpg",
+			"img/pay_02.jpg",
+			"css/pay.css",
+			"html/purse.html"
+		],
+		"refer": []
+	},
+	"html/sports_detail2.html": {
+		"resources": [
+			"img/share_02.png",
+			"img/share_04.png",
+			"css/sport_deail.css",
+			"img/share_01.png",
+			"img/sport_detail_01.jpg",
+			"img/share_03.png",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/photo.html": {
+		"resources": [
+			"img/photo_06.jpg",
+			"img/photo_03.jpg",
+			"img/photo_02.jpg",
+			"img/photo_01.jpg",
+			"css/photo.css",
+			"img/photo_04.jpg",
+			"img/photo_05.jpg",
+			"index.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"start.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"js/common/jquery-1.8.0.min.js",
+			"img/jr/logo.jpg",
+			"img/jr/2016-05-25.jpg",
+			"img/jr/2016-05-30.jpg",
+			"img/jr/2016-05-31.jpg",
+			"img/jr/2016-06-02.jpg",
+			"img/jr/2016-06-12.jpg",
+			"img/jr/2016-06-24.jpg",
+			"img/jr/2016-07-01.jpg",
+			"img/jr/2016-07-31.jpg",
+			"img/jr/2016-07-07.jpg"
+		],
+		"refer": [
+			"login.html"
+		]
+	},
+	"html/safe_index_01.html": {
+		"resources": [
+			"js/safe_index1.js",
+			"img/safe_index_01.jpg",
+			"css/safe_index_01.css",
+			"img/safe_index_02.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/safe_detail.html"
+		]
+	},
+	"html/safe_detail.html": {
+		"resources": [
+			"img/safe_detail_01.jpg",
+			"css/safe_detail.css",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/health_index_01.html": {
+		"resources": [
+			"img/health_index_02.jpg",
+			"js/common/config.js",
+			"css/health_index_01.css",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"js/EveryExercise.js",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"img/health_index_01.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"html/sports_detail_ywqz.html",
+			"html/sports_detail3.html",
+			"html/sports_detail_ts.html"
+		],
+		"refer": [
+			"html/sports_detail_ywqz.html",
+			"html/sports_detail3.html",
+			"html/sports_detail_ts.html"
+		]
+	},
+	"html/sports_detail_ywqz.html": {
+		"resources": [
+			"html/health_index_01.html",
+			"js/sports_detail_ywqz.js"
+		],
+		"refer": [
+			"html/health_index_01.html"
+		]
+	},
+	"html/sports_detail3.html": {
+		"resources": [
+			"html/health_index_01.html",
+			"js/sports_detail3.js",
+			"js/Chart.js",
+			"img/sport_detail_01.jpg"
+		],
+		"refer": [
+			"html/health_index_01.html"
+		]
+	},
+	"html/sports_detail_ts.html": {
+		"resources": [
+			"js/sports_detail_ts.js",
+			"html/health_index_01.html"
+		],
+		"refer": [
+			"html/health_index_01.html"
+		]
+	},
+	"html/health_index_02.html": {
+		"resources": [
+			"js/health_index1.js",
+			"js/common/config.js",
+			"css/health_index_01.css",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/sports_detail2.html"
+		]
+	},
+	"html/questionnaire_index.html": {
+		"resources": [
+			"img/questionnaire_01.png",
+			"img/questionnaire_03.png",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"img/sport_detail_01.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"js/questionnaire_index.js",
+			"css/questionnaire_index.css",
+			"img/questionnaire_02.png"
+		],
+		"refer": [
+			"html/questionnaire_start.html"
+		]
+	},
+	"html/questionnaire_start.html": {
+		"resources": [
+			"js/common/config.js",
+			"css/questionnaire_start.css",
+			"js/mui.min.js",
+			"js/common/app.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"img/sport_detail_01.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/questionnaire_content.html"
+		]
+	},
+	"html/questionnaire_content.html": {
+		"resources": [
+			"css/questionnaire_content.css"
+		],
+		"refer": []
+	},
+	"html/Bookmark_card_list.html": {
+		"resources": [
+			"css/Bookmark_card_list.css",
+			"img/safe_index_01.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"img/index_14.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/Bookmark_card_index.html"
+		]
+	},
+	"html/Bookmark_card_index.html": {
+		"resources": [
+			"css/Bookmark_card_index.css",
+			"js/bookyshIndex.js",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/book_content.html"
+		]
+	},
+	"html/book_content.html": {
+		"resources": [
+			"css/book_content.css",
+			"img/happy_index_10.jpg",
+			"img/book_content_01.jpg"
+		],
+		"refer": []
+	},
+	"html/happy_index_03.html": {
+		"resources": [
+			"js/common/config.js",
+			"css/happy_index_01.css",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"js/happy_index_03.js",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/happy_detail.html"
+		]
+	},
+	"html/happy_detail.html": {
+		"resources": [
+			"img/happy_index_10.jpg",
+			"css/happy_detail.css"
+		],
+		"refer": []
+	},
+	"html/register_07.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js",
+			"html/register_01.html"
+		],
+		"refer": [
+			"html/register_01.html"
+		]
+	},
+	"html/register_08.html": {
+		"resources": [
+			"html/register_01.html",
+			"js/common/config.js",
+			"js/common/app.js",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/register_01.html"
+		]
+	},
+	"html/myinformation.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"css/myinfomation.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/myinformationJS.js",
+			"js/common/jquery-1.8.0.min.js",
+			"html/opinion_01.html",
+			"html/opinion_02.html",
+			"html/opinion_03.html"
+		],
+		"refer": [
+			"html/opinion_01.html",
+			"html/opinion_02.html",
+			"html/opinion_03.html"
+		]
+	},
+	"html/photo_list.html": {
+		"resources": [
+			"img/happy_index_10.jpg",
+			"js/photo_list.js",
+			"img/register_01.jpg",
+			"img/photo_01.jpg",
+			"css/photo_list.css",
+			"js/common/config.js",
+			"js/mui.min.js",
+			"js/common/app.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/picture_list_bj.html",
+			"html/picture_list_gr.html"
+		]
+	},
+	"html/school_index3.html": {
+		"resources": [
+			"js/mui.zoom.js",
+			"js/mui.previewimage.js",
+			"img/head_02.jpg",
+			"css/photo_detail.css",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/school_index.html": {
+		"resources": [
+			"img/myinformation_03.png",
+			"js/common/config.js",
+			"html/school_index1.html",
+			"js/mui.min.js",
+			"js/common/app.js",
+			"fonts/mui.ttf",
+			"css/school_index.css",
+			"css/mui.min.css",
+			"img/myinformation_02.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"html/school_choose_index.html"
+		],
+		"refer": [
+			"html/school_index1.html",
+			"html/school_choose_index.html"
+		]
+	},
+	"html/school_index1.html": {
+		"refer": [
+			"html/school_index2.html",
+			"html/school_index.html"
+		],
+		"resources": [
+			"html/school_index.html"
+		]
+	},
+	"html/school_index2.html": {
+		"resources": [
+			"js/studetnzy.js",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/school_index3.html"
+		]
+	},
+	"html/picture_list_bj.html": {
+		"resources": [
+			"css/picture_list.css",
+			"img/picture_list_02.jpg",
+			"img/picture_list_01.jpg",
+			"js/picture_list_bj.js"
+		],
+		"refer": []
+	},
+	"html/school_choose_index.html": {
+		"resources": [
+			"html/school_index.html",
+			"css/school_choose_index.css"
+		],
+		"refer": [
+			"html/school_index.html"
+		]
+	},
+	"html/health_index_04.html": {
+		"resources": [
+			"js/common/config.js",
+			"img/health_index_09.jpg",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"css/health_index_04.css",
+			"fonts/mui.ttf",
+			"img/index_15_01.jpg",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/health_index_message2.html",
+			"html/emergency_treatment.html",
+			"html/health_index_message3.html"
+		]
+	},
+	"html/health_index_message2.html": {
+		"resources": [
+			"css/health_index_message2.css",
+			"img/health_index_message2_01.jpg",
+			"img/sport_detail_01.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/happy_index_04.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/happy_index_04.js",
+			"js/common/jquery-1.8.0.min.js",
+			"css/happy_index_04.css"
+		],
+		"refer": []
+	},
+	"html/emergency_treatment.html": {
+		"resources": [
+			"img/emergency_treatment_06.jpg",
+			"img/emergency_treatment_25.jpg",
+			"img/emergency_treatment_12.jpg",
+			"img/emergency_treatment_03.jpg",
+			"img/emergency_treatment_08.jpg",
+			"img/emergency_treatment_15.jpg",
+			"img/emergency_treatment_02.jpg",
+			"img/emergency_treatment_19.jpg",
+			"img/emergency_treatment_23.jpg",
+			"img/emergency_treatment_17.jpg",
+			"img/emergency_treatment_11.jpg",
+			"img/emergency_treatment_05.jpg",
+			"img/emergency_treatment_07.jpg",
+			"img/emergency_treatment_13.jpg",
+			"img/emergency_treatment_20.jpg",
+			"img/emergency_treatment_24.jpg",
+			"img/emergency_treatment_16.jpg",
+			"img/emergency_treatment_22.jpg",
+			"img/emergency_treatment_10.jpg",
+			"img/emergency_treatment_14.jpg",
+			"img/emergency_treatment_09.jpg",
+			"img/emergency_treatment_01.jpg",
+			"img/emergency_treatment_04.jpg",
+			"img/emergency_treatment_21.jpg",
+			"img/emergency_treatment_18.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/emergency_treatment_26.jpg",
+			"img/emergency_treatment_27.jpg",
+			"html/emergency_treatment_detail.html",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/common/jquery-1.8.0.min.js",
+			"img/emergency_treatment_28.jpg"
+		],
+		"refer": [
+			"html/emergency_treatment_detail.html",
+			"html/safe_index_01.html",
+			"html/safe_index_0101.html",
+			"html/safe_index_0102.html"
+		]
+	},
+	"html/health_index_message3.html": {
+		"resources": [
+			"img/health_index_message3_01.jpg",
+			"img/health_index_message2_02.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js",
+			"html/health_index_message4.html",
+			"img/health_index_message3_03.jpg",
+			"img/health_index_message3_02.jpg"
+		],
+		"refer": [
+			"html/health_index_message4.html",
+			"html/health_index_message_info.html"
+		]
+	},
+	"html/health_index_message4.html": {
+		"resources": [
+			"html/health_index_message3.html"
+		],
+		"refer": [
+			"html/health_index_message3.html"
+		]
+	},
+	"html/health_index_message_info.html": {
+		"resources": [
+			"img/like1.png",
+			"css/sport_deail.css",
+			"img/sport_detail_01.jpg",
+			"css/style.css",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js",
+			"img/like2.png"
+		],
+		"refer": []
+	},
+	"html/opinion_01.html": {
+		"resources": [
+			"js/xssl.js",
+			"js/Chart.js",
+			"img/sport_detail_01.jpg",
+			"html/myinformation.html",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/myinformation.html"
+		]
+	},
+	"html/opinion_03.html": {
+		"resources": [
+			"js/xstz.js",
+			"html/myinformation.html"
+		],
+		"refer": [
+			"html/myinformation.html"
+		]
+	},
+	"html/opinion_02.html": {
+		"resources": [
+			"html/myinformation.html",
+			"js/xssg.js",
+			"js/Chart.js",
+			"img/sport_detail_01.jpg"
+		],
+		"refer": [
+			"html/myinformation.html"
+		]
+	},
+	"html/mailbox_01.html": {
+		"resources": [
+			"html/setting.html"
+		],
+		"refer": [
+			"html/setting.html"
+		]
+	},
+	"html/Remote_login.html": {
+		"resources": [
+			"html/setting.html"
+		],
+		"refer": [
+			"html/setting.html"
+		]
+	},
+	"html/emergency_treatment_detail.html": {
+		"resources": [
+			"html/emergency_treatment.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"html/emergency_treatment.html"
+		]
+	},
+	"html/picture_list_gr.html": {
+		"resources": [
+			"css/picture_list.css",
+			"js/common/config.js",
+			"img/picture_list_02.jpg",
+			"img/happy_index_10.jpg",
+			"js/picture_list_gr.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/register_01.jpg",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js",
+			"img/picture_list_01.jpg"
+		],
+		"refer": []
+	},
+	"html/about.html": {
+		"resources": [
+			"img/happy_index_10.jpg",
+			"html/setting.html",
+			"css/happy_detail.css"
+		],
+		"refer": [
+			"html/setting.html"
+		]
+	},
+	"html/opinion.html": {
+		"resources": [
+			"html/setting.html"
+		],
+		"refer": [
+			"html/setting.html"
+		]
+	},
+	"html/info_list.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"css/info.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/info_detail.html"
+		]
+	},
+	"html/info.html": {
+		"resources": [
+			"js/common/config.js",
+			"img/info_03.jpg",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"img/info_02.jpg",
+			"css/info.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js",
+			"img/info_04.jpg",
+			"img/info_01.jpg"
+		],
+		"refer": [
+			"html/info_list.html"
+		]
+	},
+	"html/safe_index_0101.html": {
+		"resources": [
+			"js/safe_index1.js",
+			"img/index_14.jpg",
+			"img/safe_index_01.jpg",
+			"css/safe_index_01.css",
+			"img/safe_index_02.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js",
+			"js/safe_index101.js"
+		],
+		"refer": [
+			"html/safe_detail.html"
+		]
+	},
+	"html/safe_index_0102.html": {
+		"resources": [
+			"js/safe_index102.js",
+			"img/index_14.jpg",
+			"img/safe_index_01.jpg",
+			"css/safe_index_01.css",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/safe_detail.html"
+		]
+	}
+=======
+	"login.html": {
+		"resources": [
+			"js/mui.min.js",
+			"img/login_01.jpg",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"img/login_02.jpg",
+			"html/register_01.html",
+			"index.html",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/common/jquery-1.8.0.min.js",
+			"js/login_myjs.js"
+		],
+		"refer": [
+			"html/register_01.html",
+			"index.html"
+		]
+	},
+	"html/register_01.html": {
+		"resources": [
+			"html/register_02.html",
+			"login.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"html/register_05.html"
+		],
+		"refer": [
+			"html/register_02.html",
+			"login.html",
+			"html/register_05.html"
+		]
+	},
+	"html/register_02.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"html/register_01.html",
+			"html/register_03.html"
+		],
+		"refer": [
+			"html/register_01.html",
+			"html/register_03.html"
+		]
+	},
+	"html/register_03.html": {
+		"resources": [
+			"html/register_02.html",
+			"html/register_04.html",
+			"img/register_01.jpg"
+		],
+		"refer": [
+			"html/register_02.html",
+			"html/register_04.html"
+		]
+	},
+	"html/register_04.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"html/register_03.html"
+		],
+		"refer": [
+			"html/register_03.html"
+		]
+	},
+	"html/register_05.html": {
+		"resources": [
+			"html/register_06.html",
+			"html/register_01.html"
+		],
+		"refer": [
+			"html/register_06.html",
+			"html/register_01.html"
+		]
+	},
+	"html/register_06.html": {
+		"resources": [
+			"html/register_05.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css"
+		],
+		"refer": [
+			"html/register_05.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"img/index_03.jpg",
+			"img/index_07.jpg",
+			"img/index_01.jpg",
+			"fonts/mui.ttf",
+			"img/index_04.jpg",
+			"css/style.css",
+			"img/index_14.jpg",
+			"img/index_05.jpg",
+			"css/index.css",
+			"img/index_06.jpg",
+			"js/mui.min.js",
+			"img/login_01.jpg",
+			"img/index_08.jpg",
+			"css/mui.min.css",
+			"img/index_10.jpg",
+			"img/index_09.jpg",
+			"img/index_02.jpg",
+			"img/index_15.jpg",
+			"js/index.js",
+			"img/index_13.jpg",
+			"html/safe_index.html",
+			"img/index_21.jpg",
+			"img/index_19.jpg",
+			"img/index_12.jpg",
+			"img/index_11.jpg",
+			"img/index_17.jpg",
+			"img/index_20.jpg",
+			"img/index_24.jpg",
+			"img/index_22.jpg",
+			"img/index_18.jpg",
+			"img/index_26.jpg",
+			"img/index_23.jpg",
+			"img/index_16.jpg",
+			"img/index_25.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"html/setting.html",
+			"html/health_index.html",
+			"html/happy_index.html",
+			"html/purse.html",
+			"html/photo.html",
+			"img/index_32.jpg",
+			"img/index_27.jpg",
+			"img/index_29.jpg",
+			"img/index_31.jpg",
+			"img/index_30.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"img/login_03.jpg"
+		],
+		"refer": [
+			"html/setting.html",
+			"html/health_index_04.html",
+			"html/photo_list.html",
+			"html/health_index_02.html",
+			"html/happy_index_04.html",
+			"html/happy_index_03.html",
+			"html/Bookmark_card_list.html",
+			"html/questionnaire_index.html",
+			"html/safe_index_0101.html",
+			"html/safe_index_01.html",
+			"html/emergency_treatment.html",
+			"html/school_index.html",
+			"html/health_index_01.html",
+			"html/info.html"
+		]
+	},
+	"html/safe_index.html": {
+		"resources": [
+			"css/safe_index.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_10.jpg",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"img/safe_index_04.jpg",
+			"img/safe_index_02.jpg",
+			"img/safe_index_03.jpg",
+			"js/safe_index.js",
+			"index.html"
+		],
+		"refer": []
+	},
+	"html/setting.html": {
+		"resources": [
+			"img/setting_04.jpg",
+			"img/setting_05.jpg",
+			"index.html",
+			"img/setting_07.jpg",
+			"img/setting_01.jpg",
+			"img/setting_06.jpg",
+			"img/setting_03.jpg",
+			"img/setting_08.jpg",
+			"img/setting_02.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js",
+			"html/Remote_login.html",
+			"html/opinion.html"
+		],
+		"refer": [
+			"index.html",
+			"html/Remote_login.html",
+			"html/opinion.html"
+		]
+	},
+	"html/health_index.html": {
+		"resources": [
+			"img/health_index_06.jpg",
+			"img/health_index_04.jpg",
+			"img/health_index_02.jpg",
+			"img/health_index_03.jpg",
+			"css/health_index.css",
+			"img/health_index_07.jpg",
+			"img/health_index_01.jpg",
+			"js/health_index.js",
+			"img/health_index_05.jpg",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/happy_index.html": {
+		"resources": [
+			"img/happy_index_07.jpg",
+			"img/happy_index_04.jpg",
+			"img/happy_index_02.jpg",
+			"img/happy_index_05.jpg",
+			"img/happy_index_03.jpg",
+			"img/happy_index_06.jpg",
+			"img/happy_index_01.jpg",
+			"img/happy_index_09.jpg",
+			"img/happy_index_08.jpg",
+			"css/happy_index.css",
+			"index.html"
+		],
+		"refer": []
+	},
+	"html/purse.html": {
+		"resources": [
+			"css/purse.css",
+			"html/pay.html",
+			"index.html"
+		],
+		"refer": [
+			"html/pay.html"
+		]
+	},
+	"html/pay.html": {
+		"resources": [
+			"img/pay_01.jpg",
+			"img/pay_02.jpg",
+			"css/pay.css",
+			"html/purse.html"
+		],
+		"refer": []
+	},
+	"html/sports_detail2.html": {
+		"resources": [
+			"img/share_02.png",
+			"img/share_04.png",
+			"css/sport_deail.css",
+			"img/share_01.png",
+			"img/sport_detail_01.jpg",
+			"img/share_03.png",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/photo.html": {
+		"resources": [
+			"img/photo_06.jpg",
+			"img/photo_03.jpg",
+			"img/photo_02.jpg",
+			"img/photo_01.jpg",
+			"css/photo.css",
+			"img/photo_04.jpg",
+			"img/photo_05.jpg",
+			"index.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"start.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"img/jr/2016-06-21.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"img/jr/2016-06-24.jpg",
+			"img/jr/2016-06-27.jpg"
+		],
+		"refer": [
+			"login.html"
+		]
+	},
+	"html/health_index_message_info.html": {
+		"resources": [
+			"img/like1.png",
+			"img/like2.png",
+			"css/sport_deail.css",
+			"img/sport_detail_01.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/health_index_04.html": {
+		"resources": [
+			"img/health_index_09.jpg",
+			"css/health_index_04.css",
+			"img/index_15_01.jpg",
+			"img/safe_index_01.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/health_index_message3.html"
+		]
+	},
+	"html/health_index_message3.html": {
+		"resources": [
+			"img/health_index_message3_03.jpg",
+			"img/health_index_message3_01.jpg",
+			"img/health_index_message3_02.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/health_index_message_info.html"
+		]
+	},
+	"html/photo_list.html": {
+		"resources": [
+			"js/common/config.js",
+			"img/happy_index_10.jpg",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"js/photo_list.js",
+			"css/mui.min.css",
+			"img/register_01.jpg",
+			"css/style.css",
+			"img/photo_01.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"css/photo_list.css"
+		],
+		"refer": []
+	},
+	"html/health_index_02.html": {
+		"resources": [
+			"js/health_index1.js",
+			"css/health_index_01.css",
+			"img/safe_index_01.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/sports_detail2.html"
+		]
+	},
+	"html/happy_index_04.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/happy_index_04.js",
+			"js/common/jquery-1.8.0.min.js",
+			"css/happy_index_04.css"
+		],
+		"refer": []
+	},
+	"html/happy_index_03.html": {
+		"resources": [
+			"js/common/config.js",
+			"css/happy_index_01.css",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"js/happy_index_03.js",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/happy_detail.html"
+		]
+	},
+	"html/happy_detail.html": {
+		"resources": [
+			"img/happy_index_10.jpg",
+			"css/happy_detail.css",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js",
+			"img/happy_index_02.jpg"
+		],
+		"refer": []
+	},
+	"html/Bookmark_card_list.html": {
+		"resources": [
+			"js/common/config.js",
+			"css/Bookmark_card_list.css",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/Bookmark_card_index.html"
+		]
+	},
+	"html/book_content.html": {
+		"resources": [
+			"css/book_content.css",
+			"img/happy_index_10.jpg",
+			"img/book_content_01.jpg"
+		],
+		"refer": []
+	},
+	"html/Bookmark_card_index.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"img/safe_index_01.jpg",
+			"css/Bookmark_card_index.css",
+			"js/common/jquery-1.8.0.min.js",
+			"js/bookyshIndex.js"
+		],
+		"refer": [
+			"html/book_content.html"
+		]
+	},
+	"html/questionnaire_index.html": {
+		"resources": [
+			"img/questionnaire_01.png",
+			"img/questionnaire_03.png",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/style.css",
+			"img/sport_detail_01.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"js/questionnaire_index.js",
+			"css/questionnaire_index.css",
+			"img/questionnaire_02.png"
+		],
+		"refer": [
+			"html/questionnaire_start.html"
+		]
+	},
+	"html/safe_index_0101.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"img/safe_index_01.jpg",
+			"css/safe_index_01.css",
+			"js/common/jquery-1.8.0.min.js",
+			"js/safe_index101.js"
+		],
+		"refer": [
+			"html/safe_detail.html"
+		]
+	},
+	"html/safe_detail.html": {
+		"resources": [
+			"img/safe_detail_01.jpg",
+			"css/safe_detail.css",
+			"css/style.css",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/safe_index_01.html": {
+		"resources": [
+			"js/safe_index1.js",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"img/safe_index_01.jpg",
+			"css/safe_index_01.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/safe_index_0102.html": {
+		"resources": [
+			"js/common/config.js",
+			"js/safe_index102.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"img/safe_index_01.jpg",
+			"css/safe_index_01.css",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": [
+			"html/safe_detail.html"
+		]
+	},
+	"html/emergency_treatment.html": {
+		"resources": [
+			"img/emergency_treatment_06.jpg",
+			"img/emergency_treatment_12.jpg",
+			"img/emergency_treatment_03.jpg",
+			"js/common/jquery-1.8.0.min.js",
+			"img/emergency_treatment_08.jpg",
+			"img/emergency_treatment_15.jpg",
+			"img/emergency_treatment_02.jpg",
+			"js/common/config.js",
+			"img/emergency_treatment_28.jpg",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"img/emergency_treatment_19.jpg",
+			"img/emergency_treatment_23.jpg",
+			"img/emergency_treatment_17.jpg",
+			"img/emergency_treatment_11.jpg",
+			"img/emergency_treatment_05.jpg",
+			"fonts/mui.ttf",
+			"img/emergency_treatment_07.jpg",
+			"img/emergency_treatment_13.jpg",
+			"img/emergency_treatment_20.jpg",
+			"img/emergency_treatment_24.jpg",
+			"img/emergency_treatment_16.jpg",
+			"img/emergency_treatment_22.jpg",
+			"img/emergency_treatment_10.jpg",
+			"img/emergency_treatment_14.jpg",
+			"img/emergency_treatment_09.jpg",
+			"img/emergency_treatment_01.jpg",
+			"css/mui.min.css",
+			"img/emergency_treatment_04.jpg",
+			"img/emergency_treatment_21.jpg",
+			"img/emergency_treatment_18.jpg"
+		],
+		"refer": [
+			"html/safe_index_0102.html"
+		]
+	},
+	"html/school_index.html": {
+		"resources": [
+			"img/myinformation_03.png",
+			"js/common/config.js",
+			"js/mui.min.js",
+			"js/common/app.js",
+			"fonts/mui.ttf",
+			"css/school_index.css",
+			"css/mui.min.css",
+			"img/myinformation_02.jpg",
+			"js/common/jquery-1.8.0.min.js"
+		],
+		"refer": []
+	},
+	"html/health_index_01.html": {
+		"resources": [
+			"img/health_index_02.jpg",
+			"css/health_index_01.css",
+			"js/EveryExercise.js",
+			"img/safe_index_01.jpg",
+			"img/health_index_01.jpg",
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/index_14.jpg",
+			"css/style.css",
+			"js/common/jquery-1.8.0.min.js"
+		]
+	},
+	"html/questionnaire_start.html": {
+		"resources": [
+			"css/questionnaire_start.css"
+		]
+	},
+	"html/info_list.html": {
+		"refer": [
+			"html/info_detail.html"
+		],
+		"resources": [
+			"js/common/config.js",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"css/info.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js"
+		]
+	},
+	"html/info.html": {
+		"resources": [
+			"img/info_03.jpg",
+			"js/common/config.js",
+			"img/info_02.jpg",
+			"js/common/app.js",
+			"js/mui.min.js",
+			"css/info.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/common/jquery-1.8.0.min.js",
+			"img/info_04.jpg",
+			"img/info_01.jpg"
+		],
+		"refer": [
+			"html/info_list.html"
+		]
+	},
+	"html/Remote_login.html": {
+		"resources": [
+			"index.html",
+			"html/setting.html"
+		],
+		"refer": [
+			"index.html",
+			"html/setting.html"
+		]
+	},
+	"html/opinion.html": {
+		"resources": [
+			"html/setting.html"
+		],
+		"refer": [
+			"html/setting.html"
+		]
+	}
+>>>>>>> .r421
+}

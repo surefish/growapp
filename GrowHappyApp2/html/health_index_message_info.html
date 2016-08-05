@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/sport_deail.css" />
+		<script src="../js/mui.min.js "></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+
+	<body>
+		<div class="title">文章详情</div>
+		<div class="content">
+			<div class="text" id="cd_my">
+
+			</div>
+			<div class="tip">
+				发表时间：<span class="date" id="cd_my1"></span>
+
+			</div>
+			<div class="roll">
+				<!--<div class="img">
+				<img id="im2" src="">
+				
+			</div>-->
+				<div class="message" id="cd_my3">
+
+				</div>
+			</div>
+
+			<div class="great">
+				<span>阅读</span>
+				<span id="ydulian"></span>
+				<img src="../img/like1.png" id="great" onclick="ckgreat();">
+				<span id="dianz"></span>
+
+			</div>
+		</div>
+		<div class="bk">
+		</div>
+		<div class="footbk">
+			<img src="../img/sport_detail_01.jpg">
+		</div>
+		<div class="foot">
+			<span class="iconbk">		
+			<a  onclick="goback();">
+			<span class="mui-icon mui-icon-back icon">
+			</a>
+			</span>
+		</div>
+	</body>
+	<script>
+		var great = 0;
+		mui.plusReady(function() {
+
+			mui.init();
+			home();
+
+		});
+
+		function home() {
+			var fuid = plus.storage.getItem("mymessFUID");
+			var w;
+			w = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+			mui.ajax(ip + "newbegin/index/eyesInfo", {
+				data: {
+					fcaalog: fuid
+				},
+				dataType: 'json', //服务器返回json格式数据
+				type: 'get', //HTTP请求类型
+				success: function(json) {
+					w.close();
+					//获得服务器响应
+					$("#cd_my").empty();
+					$("#cd_my1").empty();
+					$("#ydulian").empty();
+					$("#dianz").empty();
+					$("#cd_my3").empty();
+
+					$("#cd_my").append(json['student'].ftitle); //标题
+					$("#cd_my1").append(json['student'].fcreatetime); //时间
+					$("#ydulian").append(json['student'].freads); //阅读数
+					$("#dianz").append(json['student'].fpraise); //点赞数据
+					var isz = json['student'].isPraise;
+					if('zhan' == isz) {
+						$("#great").attr("src", "../img/like2.png");
+						great = 1;
+					}
+					if('no' == isz) {
+						$("#great").attr("src", "../img/like1.png");
+						great = 0;
+					}
+					var t = json['student'].fcontent
+					$("#cd_my3").append(t); //内容
+				}
+
+			});
+
+		}
+
+		function ckgreat() {
+			var w1;
+			var fuid = plus.storage.getItem("mymessFUID");
+			if(great == 0) {
+
+				w1 = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+				//赞
+				$("#great").attr("src", "../img/like2.png");
+				mui.ajax(ip + "newbegin/index/eyePraise", {
+					data: {
+						zuid: fuid
+					},
+					dataType: 'text', //服务器返回json格式数据
+					type: 'get', //HTTP请求类型
+					success: function(json) {
+						//获得服务器响应
+						w1.close();
+						var data = json.split(",");
+						if(data[0] == 'success') {
+							$("#dianz").empty();
+							$("#dianz").append(data[1]); //点赞数据
+							great = 1;
+							return;
+						}
+					}
+				});
+			}
+			if(great == 1) {
+				//不赞
+				/*
+				$("#great").attr("src", "../img/like1.png");
+				w1 = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+				mui.ajax(ip + "newbegin/index/eyePraisej", {
+					data: {
+						bzuid: fuid
+					},
+					dataType: 'text', //服务器返回json格式数据
+					type: 'get', //HTTP请求类型
+					success: function(json) {
+						//获得服务器响应
+						w1.close();
+						var data = json.split(",");
+						if (data[0] == 'success') {
+							$("#dianz").empty();
+							$("#dianz").append(data[1]); //点赞数据
+							great=0;
+							return;
+						}
+					}
+				});*/
+			}
+			//great=(great + 1) % 2
+		}
+
+		function goback() {
+			var myid = plus.storage.getItem("mydqckID");
+			var wobj = plus.webview.getWebviewById(myid.toString());
+			wobj.reload(true);
+			mui.back();
+		}
+	</script>
+
+</html>

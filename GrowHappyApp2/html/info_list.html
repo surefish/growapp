@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>成长快乐</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/info.css">
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav headbk">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left headlink"></a>
+			<h1 class="mui-title">消息列表</h1>
+		</header>
+		<div id="cd_my" class="content" >
+			
+				
+					
+			
+		</div>
+	</body>
+<script>
+mui.plusReady(function() {
+			mui.init({
+				beforeback: function() {
+					//获得列表界面的webview
+					var list = plus.webview.getWebviewById('info_001');
+					//触发列表界面的自定义事件（refresh）,从而进行数据刷新
+					//mui.fire(list, 'refresh');
+				    list.reload();
+					//返回true，继续页面关闭逻辑
+					
+					return true;
+				}
+			});
+
+
+			var fc = plus.storage.getItem("messagetype");
+			    //alert(fc);
+				mui.ajax(ip + "newbegin/messages/detailMessage", {
+			data: {
+				fcaalog:fc
+			},
+			dataType: 'json', //服务器返回json格式数据
+			type: 'get', //HTTP请求类型
+			success: function(json) {
+				//获得服务器响应
+				var stList = json['student'];
+				var ht = '';
+				for (var a = 0; a < stList.length; a++) {
+					var fuid1="'"+stList[a].fuID+"'";
+					ht+='<a  href="javascript:goNextPage('+fuid1+');"><div  class="item">';
+					+"'"
+					if ('0' == stList[a].look) {
+						ht += '<span class="red">[未读]' + stList[a].ftitle + '</span>';
+					}
+					if ('1' == stList[a].look) {
+						ht += '<span>'+stList[a].ftitle+'</span>';
+					}
+					ht+='<span class="mui-icon mui-icon-bars right1"></span>';
+					ht+='<p class="date">'+stList[a].fstrpublishtime+'</p>';
+					ht+='<p>'+stList[a].fcontent+'</p>';	
+					ht+='</div></a>';
+					//alert(ht)
+				}
+				$("#cd_my").append(ht);
+			}
+		});
+				
+});
+	
+	
+	function goNextPage(i){
+	var info_listID = plus.storage.getItem("info_listID");
+	//alert(i)
+	plus.storage.setItem("info_listIDs", info_listID);
+	plus.storage.setItem("messageFuid", i.toString());
+	showFact('info_detail.html', '首页', '', 'info_detail','');
+}
+</script>
+</html>	

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>成长快乐</title>
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/style.css" />
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/common/jquery-1.8.0.min.js"></script>
+		<script src="../js/common/app.js"></script>
+		<script src="../js/common/config.js"></script>
+		<style type="text/css">
+			.top
+			{
+				margin-top:70px;
+				width: 100%;
+			}
+			input
+			{
+				width:90% !important;
+				margin:0px 5%;
+				background-color:#eeeeee !important;
+				border:solid 1px #EEEEEE !important;
+				border-radius:5px !important;
+				height:40px !important;
+			}
+			.sub
+			{
+				width:90% !important;
+				margin:0px 5%;
+				background-color:#ff8a01 !important;
+				border:solid 1px #ff8a01 !important;
+				border-radius:5px !important;
+				color: white;
+				height:40px !important;
+				font-size:16px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<button type="button" class="mui-left mui-action-back mui-btn  mui-btn-link mui-btn-nav mui-pull-left">
+				<span class="mui-icon mui-icon-left-nav" style="color:#919191;"></span>
+			</button>
+			<h1 class="mui-title" style="color:#919191;">注册</h1>
+		</header>
+		<div class="top">
+			<input type="text" id='fno' placeholder="输入身份证">
+			<input type="text" id='username' placeholder="输入姓名">
+		</div>
+		<a href="javascript:void(0);">
+			<button class="sub" onclick="register();">验&nbsp;&nbsp;&nbsp;证</button>
+		</a>
+	</body>
+	<script>
+	mui.plusReady(function() {
+		mui.init();
+	});
+	
+	var w;
+			function register() {
+				
+				w = plus.nativeUI.showWaiting("　　 请等待...　　 ");
+				mui.ajax(ip + "newbegin/stdreg/myReg", {
+					data: {
+						fno: $("#fno").val(),
+			            username: $("#username").val()
+					},
+					dataType: 'json', //服务器返回json格式数据
+					type: 'post', //HTTP请求类型 
+					timeout: 10000, //超时时间设置为10秒；
+					success: function(json) {
+					//服务器返回响应，根据响应结果，分析是否登录成功；
+						w.close();
+						var a=json['student'].stuRegister;
+						//alert(a);
+						if(a=='success'){
+				                plus.storage.setItem("fno", json['student'].fno);//学生学号
+				                showFact('register_03.html', '首页', '', 'index1',json);
+			           }else if(a=='error'){
+						plus.nativeUI.toast("您输入的身份证或姓名错误！", {
+								duration: "long"
+							});
+			           }
+					},
+					error: function(xhr, type, errorThrown) {
+						//异常处理； 
+						w.close();
+						if (type == 'timeout') {
+							plus.nativeUI.toast("无法连接服务器，请检查网络！", {
+								duration: "long"
+							});
+						} else {
+							plus.nativeUI.toast("登录失败，请联系管理员！", {
+								duration: "long"
+							});
+						}
+					}
+				});
+			}
+	
+	
+
+</script>
+</html>
